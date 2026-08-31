@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#C3C7C1"/>
+  <g stroke="#24272A" stroke-width="1.5" stroke-opacity="0.35" fill="none">
+    <!-- Copertura -->
+    <polygon points="180,120 560,120 620,160 240,160" fill="#F2F3F0"/>
+    <!-- Pareti (esplose) -->
+    <polygon points="200,190 540,190 540,260 200,260" fill="#EDEEEA"/>
+    <polygon points="200,190 200,260 170,245 170,175" fill="#EDEEEA"/>
+    <!-- Pavimento -->
+    <polygon points="190,300 570,300 620,335 240,335" fill="#E4E6E1"/>
+    <!-- Telaio -->
+    <polygon points="200,380 560,380 600,405 240,405" fill="#9E4B32"/>
+  </g>
+  <text x="400" y="460" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#24272A">
+    Domeinox — assonometria esplosa del modulo
+  </text>
+</svg>
