@@ -207,5 +207,101 @@
     "contact": {
       "title": "Contact"
     }
+  },
+  "products": {
+    "rooms": {
+      "office": "Office",
+      "serviceRoom": "Service room",
+      "bathroom": "Bathroom",
+      "bedroom": "Bedroom",
+      "wc": "WC",
+      "lobby": "Lobby and washbasins",
+      "post": "Post",
+      "bedroomA": "Bedroom A",
+      "bedroomB": "Bedroom B",
+      "bedroomN1": "Bedroom 1",
+      "bedroomN2": "Bedroom 2",
+      "bedroomN3": "Bedroom 3",
+      "living": "Living and kitchen",
+      "bedroomMain": "Main bedroom",
+      "bedroomDouble": "Double bedroom"
+    },
+    "models": {
+      "A20-U1": {
+        "name": "Open space office",
+        "description": "Open space office, two workstations"
+      },
+      "A20-U2": {
+        "name": "Office with sanitary unit",
+        "description": "Office with ensuite WC, washbasin and shower"
+      },
+      "A20-L2": {
+        "name": "Two-bed room with bathroom",
+        "description": "Two-bed room with private bathroom"
+      },
+      "A20-S1": {
+        "name": "Sanitary block",
+        "description": "Four WC cabins, three washbasins — shower variant available"
+      },
+      "A10-G": {
+        "name": "Guardhouse and checkpoint",
+        "description": "Guard post and checkpoint, glazed on two sides"
+      },
+      "A30-L4": {
+        "name": "Four-bed room, shared bathroom",
+        "description": "Four-bed room, shared bathroom, two independent entrances"
+      },
+      "A40-D": {
+        "name": "Six-bed dormitory",
+        "description": "Three independent double rooms with a shared bathroom block"
+      },
+      "F29": {
+        "name": "Family housing unit",
+        "description": "Two A20 modules combined, assembled on site"
+      },
+      "B21-L": {
+        "name": "Comfort unit",
+        "description": "Room with private bathroom, flat-pack, 12 units per trailer"
+      }
+    },
+    "specs": {
+      "sectionTitle": "Technical data",
+      "externalDimensions": "External dimensions",
+      "netArea": "Net area",
+      "grossArea": "Gross area",
+      "weight": "Empty weight",
+      "frame": "Frame",
+      "frameValue": "S235JR steel, galvanised",
+      "panels": "Panels",
+      "panelsValue": "60 / 80 / 100 mm sandwich panel, PUR or mineral wool",
+      "uValue": "Thermal transmittance (U)",
+      "fireRating": "Fire reaction (EN 13501-1)",
+      "windowsAndDoors": "Windows and doors",
+      "windowsAndDoorsValue": "Aluminium",
+      "electrical": "Electrical system",
+      "snowWindLoads": "Snow and wind loads",
+      "stackable": "Stackable",
+      "stackableYesA": "Yes — Class A",
+      "stackableNoB": "No — Class B, flat-pack",
+      "combinable": "Combinable",
+      "unitsMonoblock": "Units per trailer, monoblock",
+      "unitsFlatpack": "Units per trailer, flat-pack",
+      "leadTime": "Lead time",
+      "downloads": "Downloads",
+      "downloadPdf": "Technical sheet (PDF)",
+      "downloadDwg": "CAD drawing (DWG)",
+      "downloadIfc": "BIM model (IFC)",
+      "notAvailable": "Not yet available",
+      "toConfirm": "to confirm",
+      "floorPlanTitle": "Floor plan",
+      "combinableYes": "Yes"
+    },
+    "familyLead": {
+      "offices": "Two models: open space, or with an ensuite sanitary unit.",
+      "housing": "From a two-bed room to a six-bed dormitory, up to a two-module family unit.",
+      "sanitary": "A four-cabin sanitary block, shower variant available.",
+      "special": "A guardhouse and checkpoint, glazed on two sides.",
+      "hospitality": "A comfort room with private bathroom, flat-pack for transport."
+    }
   }
 }

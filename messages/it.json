@@ -207,5 +207,101 @@
     "contact": {
       "title": "Contatti"
     }
+  },
+  "products": {
+    "rooms": {
+      "office": "Ufficio",
+      "serviceRoom": "Servizio",
+      "bathroom": "Bagno",
+      "bedroom": "Camera",
+      "wc": "WC",
+      "lobby": "Antibagno e lavabi",
+      "post": "Postazione",
+      "bedroomA": "Camera A",
+      "bedroomB": "Camera B",
+      "bedroomN1": "Camera 1",
+      "bedroomN2": "Camera 2",
+      "bedroomN3": "Camera 3",
+      "living": "Soggiorno e cucina",
+      "bedroomMain": "Camera matrimoniale",
+      "bedroomDouble": "Camera doppia"
+    },
+    "models": {
+      "A20-U1": {
+        "name": "Ufficio open space",
+        "description": "Ufficio open space, due postazioni"
+      },
+      "A20-U2": {
+        "name": "Ufficio con servizio igienico",
+        "description": "Ufficio con WC, lavabo e doccia in camera"
+      },
+      "A20-L2": {
+        "name": "Camera due posti con bagno",
+        "description": "Camera due posti con bagno privato"
+      },
+      "A20-S1": {
+        "name": "Blocco servizi",
+        "description": "Quattro cabine WC, tre lavabi — variante docce disponibile"
+      },
+      "A10-G": {
+        "name": "Guardiania e punto di controllo",
+        "description": "Guardiania e punto di controllo, vetrata su due lati"
+      },
+      "A30-L4": {
+        "name": "Camera quattro posti, bagno condiviso",
+        "description": "Camera quattro posti, bagno condiviso, due accessi indipendenti"
+      },
+      "A40-D": {
+        "name": "Dormitorio sei posti",
+        "description": "Tre camere doppie indipendenti con blocco bagno condiviso"
+      },
+      "F29": {
+        "name": "Alloggio famiglia",
+        "description": "Due moduli A20 accoppiati, montaggio in sito"
+      },
+      "B21-L": {
+        "name": "Unità comfort",
+        "description": "Camera con bagno privato, flat-pack, 12 unità per bilico"
+      }
+    },
+    "specs": {
+      "sectionTitle": "Dati tecnici",
+      "externalDimensions": "Ingombro esterno",
+      "netArea": "Superficie netta",
+      "grossArea": "Superficie lorda",
+      "weight": "Peso a vuoto",
+      "frame": "Telaio",
+      "frameValue": "Acciaio S235JR, zincato",
+      "panels": "Pannelli",
+      "panelsValue": "Sandwich 60 / 80 / 100 mm, PUR o lana di roccia",
+      "uValue": "Trasmittanza termica (U)",
+      "fireRating": "Reazione al fuoco (EN 13501-1)",
+      "windowsAndDoors": "Serramenti",
+      "windowsAndDoorsValue": "Alluminio",
+      "electrical": "Impianto elettrico",
+      "snowWindLoads": "Carichi neve e vento",
+      "stackable": "Impilabile",
+      "stackableYesA": "Sì — Classe A",
+      "stackableNoB": "No — Classe B, flat-pack",
+      "combinable": "Componibile",
+      "unitsMonoblock": "Unità per bilico, monoblocco",
+      "unitsFlatpack": "Unità per bilico, flat-pack",
+      "leadTime": "Tempo di consegna",
+      "downloads": "Download",
+      "downloadPdf": "Scheda tecnica (PDF)",
+      "downloadDwg": "Disegno CAD (DWG)",
+      "downloadIfc": "Modello BIM (IFC)",
+      "notAvailable": "Non ancora disponibile",
+      "toConfirm": "da confermare",
+      "floorPlanTitle": "Planimetria",
+      "combinableYes": "Sì"
+    },
+    "familyLead": {
+      "offices": "Due modelli: open space, o con servizio igienico in camera.",
+      "housing": "Dalla camera due posti al dormitorio sei posti, fino all’alloggio famiglia a due moduli.",
+      "sanitary": "Un blocco servizi a quattro cabine, variante docce disponibile.",
+      "special": "Una guardiania e punto di controllo, vetrata su due lati.",
+      "hospitality": "Una camera comfort con bagno privato, flat-pack per il trasporto."
+    }
   }
 }

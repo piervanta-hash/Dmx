@@ -207,5 +207,101 @@
     "contact": {
       "title": "Kontakti"
     }
+  },
+  "products": {
+    "rooms": {
+      "office": "Zyrë",
+      "serviceRoom": "Shërbim",
+      "bathroom": "Banjë",
+      "bedroom": "Dhomë",
+      "wc": "WC",
+      "lobby": "Hyrje dhe lavamanë",
+      "post": "Vendroje",
+      "bedroomA": "Dhoma A",
+      "bedroomB": "Dhoma B",
+      "bedroomN1": "Dhoma 1",
+      "bedroomN2": "Dhoma 2",
+      "bedroomN3": "Dhoma 3",
+      "living": "Ndenjie dhe kuzhinë",
+      "bedroomMain": "Dhoma kryesore",
+      "bedroomDouble": "Dhoma dyshe"
+    },
+    "models": {
+      "A20-U1": {
+        "name": "Zyrë e hapur",
+        "description": "Zyrë e hapur, dy vendpune"
+      },
+      "A20-U2": {
+        "name": "Zyrë me njësi sanitare",
+        "description": "Zyrë me WC, lavaman dhe dush në dhomë"
+      },
+      "A20-L2": {
+        "name": "Dhomë dyshe me banjë",
+        "description": "Dhomë dyshe me banjë private"
+      },
+      "A20-S1": {
+        "name": "Blloku sanitar",
+        "description": "Katër kabina WC, tre lavamanë — varianti me dush i disponueshëm"
+      },
+      "A10-G": {
+        "name": "Roje dhe pikë kontrolli",
+        "description": "Roje dhe pikë kontrolli, me xhama në dy anë"
+      },
+      "A30-L4": {
+        "name": "Dhomë katërshe, banjë e përbashkët",
+        "description": "Dhomë katërshe, banjë e përbashkët, dy hyrje të pavarura"
+      },
+      "A40-D": {
+        "name": "Konvikt gjashtë shtretër",
+        "description": "Tre dhoma dyshe të pavarura me bllok banjash të përbashkët"
+      },
+      "F29": {
+        "name": "Njësi banimi për familje",
+        "description": "Dy module A20 të bashkuara, montim në vend"
+      },
+      "B21-L": {
+        "name": "Njësi komode",
+        "description": "Dhomë me banjë private, flat-pack, 12 njësi për kamion"
+      }
+    },
+    "specs": {
+      "sectionTitle": "Të dhëna teknike",
+      "externalDimensions": "Përmasat e jashtme",
+      "netArea": "Sipërfaqja neto",
+      "grossArea": "Sipërfaqja bruto",
+      "weight": "Pesha bosh",
+      "frame": "Shasia",
+      "frameValue": "Çelik S235JR, i zinkuar",
+      "panels": "Panele",
+      "panelsValue": "Sandwich 60 / 80 / 100 mm, PUR ose leshi mineral",
+      "uValue": "Përçueshmëria termike (U)",
+      "fireRating": "Reagimi ndaj zjarrit (EN 13501-1)",
+      "windowsAndDoors": "Dritare dhe dyer",
+      "windowsAndDoorsValue": "Alumin",
+      "electrical": "Instalimi elektrik",
+      "snowWindLoads": "Ngarkesat e borës dhe erës",
+      "stackable": "E stivueshme",
+      "stackableYesA": "Po — Klasa A",
+      "stackableNoB": "Jo — Klasa B, flat-pack",
+      "combinable": "E kombinueshme",
+      "unitsMonoblock": "Njësi për kamion, monobllok",
+      "unitsFlatpack": "Njësi për kamion, flat-pack",
+      "leadTime": "Afati i dorëzimit",
+      "downloads": "Shkarkime",
+      "downloadPdf": "Fletë teknike (PDF)",
+      "downloadDwg": "Vizatim CAD (DWG)",
+      "downloadIfc": "Model BIM (IFC)",
+      "notAvailable": "Ende jo i disponueshëm",
+      "toConfirm": "për t’u konfirmuar",
+      "floorPlanTitle": "Planimetria",
+      "combinableYes": "Po"
+    },
+    "familyLead": {
+      "offices": "Dy modele: e hapur, ose me njësi sanitare në dhomë.",
+      "housing": "Nga dhoma dyshe te konvikti gjashtë-shtretër, deri te njësia familjare me dy module.",
+      "sanitary": "Një bllok sanitar me katër kabina, varianti me dush i disponueshëm.",
+      "special": "Një roje dhe pikë kontrolli, me xhama në dy anë.",
+      "hospitality": "Një dhomë komode me banjë private, flat-pack për transportin."
+    }
   }
 }

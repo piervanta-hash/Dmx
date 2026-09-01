@@ -1,7 +1,7 @@
-import type { AppPathname } from "@/i18n/routing";
+import type { StaticAppPathname } from "@/i18n/routing";
 
 export interface NavItem {
-  href: AppPathname;
+  href: StaticAppPathname;
   messageKey:
     | "home"
     | "products"
@@ -27,7 +27,7 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export interface ProductFamily {
-  href: AppPathname;
+  href: StaticAppPathname;
   messageKey: "productsOffices" | "productsHousing" | "productsSanitary" | "productsSpecial" | "productsHospitality";
 }
 

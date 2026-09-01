@@ -41,6 +41,31 @@ export const routing = defineRouting({
       it: '/prodotti/ricettivo',
       sq: '/produktet/mikpritje',
     },
+    '/products/offices/[model]': {
+      en: '/products/offices/[model]',
+      it: '/prodotti/uffici/[model]',
+      sq: '/produktet/zyra/[model]',
+    },
+    '/products/housing/[model]': {
+      en: '/products/housing/[model]',
+      it: '/prodotti/alloggi/[model]',
+      sq: '/produktet/banesa/[model]',
+    },
+    '/products/sanitary/[model]': {
+      en: '/products/sanitary/[model]',
+      it: '/prodotti/servizi-igienici/[model]',
+      sq: '/produktet/sanitare/[model]',
+    },
+    '/products/special/[model]': {
+      en: '/products/special/[model]',
+      it: '/prodotti/speciali/[model]',
+      sq: '/produktet/speciale/[model]',
+    },
+    '/products/hospitality/[model]': {
+      en: '/products/hospitality/[model]',
+      it: '/prodotti/ricettivo/[model]',
+      sq: '/produktet/mikpritje/[model]',
+    },
     '/configurator': {
       en: '/configurator',
       it: '/configura',
@@ -81,3 +106,6 @@ export const routing = defineRouting({
 });
 
 export type AppPathname = keyof typeof routing.pathnames;
+
+/** Solo le rotte statiche (esclude i segmenti dinamici tipo "[model]"): usato per i menu di navigazione. */
+export type StaticAppPathname = Exclude<AppPathname, `${string}[model]${string}`>;
