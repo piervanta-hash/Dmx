@@ -419,5 +419,49 @@
     },
     "notAvailable": "Ende jo i disponueshëm",
     "viewAll": "Shko te zona e shkarkimeve"
+  },
+  "projects": {
+    "lead": "Projekte të instaluara, të publikuara vetëm kur klienti pranon të citohet.",
+    "empty": {
+      "title": "Ende asgjë e publikuar",
+      "body": "Referencat e para do të shfaqen këtu sapo një klient të miratojë fotografitë dhe emrin për publikim."
+    }
+  },
+  "production": {
+    "lead": "Gjithçka ndodh brenda stabilimentit Domeinox — asnjë montim me nënkontraktim."
+  },
+  "certifications": {
+    "lead": "Standarde dhe certifikime, të renditura sapo të konfirmohen për publikim.",
+    "categories": {
+      "qualityManagement": "Sistemi i menaxhimit të cilësisë",
+      "welding": "Saldimi",
+      "productCompliance": "Përputhshmëria e produktit dhe kundër zjarrit"
+    },
+    "toConfirm": "për t'u konfirmuar"
+  },
+  "logistics": {
+    "lead": "Dy klasa transporti, itinerare reale nga Durrësi. Afatet e dorëzimit konfirmohen për çdo porosi."
+  },
+  "company": {
+    "lead": "Një karpenteri çeliku në Shqipëri, që hyn në tregun e moduleve container. Domeinox niset nga çeliku — konkurrentët montojnë module të blera.",
+    "marketsTitle": "Tregjet e shërbyera",
+    "markets": [
+      "Shqipëri",
+      "Kosovë",
+      "Maqedoni e Veriut",
+      "Mal i Zi",
+      "Serbi",
+      "Bosnjë dhe Hercegovinë",
+      "Greqi",
+      "Itali",
+      "BE adriatike"
+    ]
+  },
+  "contactInfo": {
+    "title": "Zyra qendrore",
+    "addressLabel": "Adresa",
+    "phoneLabel": "Telefoni",
+    "emailLabel": "Email",
+    "toConfirm": "për t'u konfirmuar"
   }
 }

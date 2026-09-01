@@ -1,8 +1,24 @@
 import { setRequestLocale } from "next-intl/server";
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { getTranslations } from "next-intl/server";
+import { ClassesSection } from "@/components/home/ClassesSection";
+import { WhyEuropeSection } from "@/components/home/WhyEuropeSection";
+import { CtaSection } from "@/components/home/CtaSection";
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <PagePlaceholder pageKey="logistics" />;
+  const t = await getTranslations({ locale, namespace: "pages.logistics" });
+  const tl = await getTranslations({ locale, namespace: "logistics" });
+
+  return (
+    <>
+      <section className="bg-calce px-8 py-24 md:px-20 md:py-32">
+        <h1 className="type-display text-display-1 text-grafite">{t("title")}</h1>
+        <p className="type-body text-body-lg mt-6 max-w-xl text-grafite/75">{tl("lead")}</p>
+      </section>
+      <ClassesSection />
+      <WhyEuropeSection />
+      <CtaSection />
+    </>
+  );
 }

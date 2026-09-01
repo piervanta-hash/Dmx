@@ -419,5 +419,49 @@
     },
     "notAvailable": "Not yet available",
     "viewAll": "View the downloads area"
+  },
+  "projects": {
+    "lead": "Installed projects, published only once the client agrees to be named.",
+    "empty": {
+      "title": "Nothing published yet",
+      "body": "The first references will appear here as soon as a client approves the photographs and the name for publication."
+    }
+  },
+  "production": {
+    "lead": "Everything here happens inside the Domeinox yard — no subcontracted assembly."
+  },
+  "certifications": {
+    "lead": "Standards and certifications, listed as soon as they're confirmed for publication.",
+    "categories": {
+      "qualityManagement": "Quality management",
+      "welding": "Welding",
+      "productCompliance": "Product and fire compliance"
+    },
+    "toConfirm": "to confirm"
+  },
+  "logistics": {
+    "lead": "Two transport classes, real crossing routes from Durrës. Lead times confirmed per order."
+  },
+  "company": {
+    "lead": "A steel workshop in Albania, entering the container-module market. Domeinox starts from steel — competitors assemble bought-in modules.",
+    "marketsTitle": "Markets served",
+    "markets": [
+      "Albania",
+      "Kosovo",
+      "North Macedonia",
+      "Montenegro",
+      "Serbia",
+      "Bosnia and Herzegovina",
+      "Greece",
+      "Italy",
+      "Adriatic EU"
+    ]
+  },
+  "contactInfo": {
+    "title": "Registered office",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "toConfirm": "to confirm"
   }
 }

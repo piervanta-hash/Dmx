@@ -1,11 +1,13 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { QuoteRequestForm } from "@/components/forms/QuoteRequestForm";
+import { DataPlaceholder } from "@/components/media/DataPlaceholder";
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "quoteRequest" });
+  const ti = await getTranslations({ locale, namespace: "contactInfo" });
 
   return (
     <>
@@ -14,8 +16,33 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <p className="type-body text-body-lg mt-6 max-w-xl text-grafite/75">{t("lead")}</p>
       </section>
       <section className="bg-zinco px-8 py-16 md:px-20 md:py-24">
-        <div className="max-w-2xl">
-          <QuoteRequestForm />
+        <div className="grid gap-16 md:grid-cols-[1fr_1.4fr]">
+          <div>
+            <h2 className="type-display text-display-3 text-grafite">{ti("title")}</h2>
+            <dl className="type-data mt-6 flex flex-col gap-4">
+              <div>
+                <dt className="text-grafite/75">{ti("addressLabel")}</dt>
+                <dd className="mt-1">
+                  <DataPlaceholder label={ti("toConfirm")} />
+                </dd>
+              </div>
+              <div>
+                <dt className="text-grafite/75">{ti("phoneLabel")}</dt>
+                <dd className="mt-1">
+                  <DataPlaceholder label={ti("toConfirm")} />
+                </dd>
+              </div>
+              <div>
+                <dt className="text-grafite/75">{ti("emailLabel")}</dt>
+                <dd className="mt-1">
+                  <DataPlaceholder label={ti("toConfirm")} />
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div className="max-w-2xl">
+            <QuoteRequestForm />
+          </div>
         </div>
       </section>
     </>

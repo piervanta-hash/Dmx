@@ -419,5 +419,49 @@
     },
     "notAvailable": "Non ancora disponibile",
     "viewAll": "Vai all'area download"
+  },
+  "projects": {
+    "lead": "Progetti installati, pubblicati solo quando il cliente accetta di essere citato.",
+    "empty": {
+      "title": "Non ancora pubblicato nulla",
+      "body": "I primi riferimenti compariranno qui non appena un cliente approverà le fotografie e il nome in pubblicazione."
+    }
+  },
+  "production": {
+    "lead": "Tutto avviene dentro lo stabilimento Domeinox — nessun montaggio in subappalto."
+  },
+  "certifications": {
+    "lead": "Norme e certificazioni, elencate non appena confermate per la pubblicazione.",
+    "categories": {
+      "qualityManagement": "Sistema di gestione qualità",
+      "welding": "Saldatura",
+      "productCompliance": "Conformità di prodotto e antincendio"
+    },
+    "toConfirm": "da confermare"
+  },
+  "logistics": {
+    "lead": "Due classi di trasporto, tratte reali da Durazzo. Tempi di consegna confermati per ogni ordine."
+  },
+  "company": {
+    "lead": "Una carpenteria in acciaio in Albania, che entra nel mercato dei moduli container. Domeinox parte dall'acciaio — i concorrenti assemblano moduli comprati.",
+    "marketsTitle": "Mercati serviti",
+    "markets": [
+      "Albania",
+      "Kosovo",
+      "Macedonia del Nord",
+      "Montenegro",
+      "Serbia",
+      "Bosnia ed Erzegovina",
+      "Grecia",
+      "Italia",
+      "UE adriatica"
+    ]
+  },
+  "contactInfo": {
+    "title": "Sede legale",
+    "addressLabel": "Indirizzo",
+    "phoneLabel": "Telefono",
+    "emailLabel": "Email",
+    "toConfirm": "da confermare"
   }
 }
