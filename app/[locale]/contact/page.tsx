@@ -1,7 +1,19 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
+import { buildAlternates } from "@/lib/seo";
 import { QuoteRequestForm } from "@/components/forms/QuoteRequestForm";
 import { DataPlaceholder } from "@/components/media/DataPlaceholder";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "quoteRequest" });
+  return {
+    title: t("title"),
+    description: t("lead"),
+    alternates: buildAlternates("/contact", locale),
+  };
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

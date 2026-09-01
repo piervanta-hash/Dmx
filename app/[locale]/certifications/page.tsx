@@ -1,9 +1,16 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
+import { simplePageMetadata } from "@/lib/simple-metadata";
 import { DataPlaceholder } from "@/components/media/DataPlaceholder";
 import { CtaSection } from "@/components/home/CtaSection";
 
 const CATEGORIES = ["qualityManagement", "welding", "productCompliance"] as const;
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return simplePageMetadata(locale, "/certifications", "certifications", "certifications");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

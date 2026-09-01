@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
+import { simplePageMetadata } from "@/lib/simple-metadata";
 import { ConfiguratorWizard } from "@/components/configurator/ConfiguratorWizard";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return simplePageMetadata(locale, "/configurator", "configurator", "configurator");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

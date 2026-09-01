@@ -1,6 +1,9 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { FamilyModelCard } from "@/components/products/FamilyModelCard";
 import { modelsByFamily, type FamilyKey } from "@/lib/products-data";
+import { PATH_BY_FAMILY } from "@/lib/family-metadata";
+import { absoluteUrl } from "@/lib/seo";
+import { breadcrumbJsonLd } from "@/lib/structured-data";
 
 const PAGE_KEY: Record<FamilyKey, "productsOffices" | "productsHousing" | "productsSanitary" | "productsSpecial" | "productsHospitality"> = {
   offices: "productsOffices",
@@ -13,11 +16,20 @@ const PAGE_KEY: Record<FamilyKey, "productsOffices" | "productsHousing" | "produ
 /** Corpo condiviso delle 5 pagine famiglia: intestazione + elenco modelli reali. */
 export function FamilyPageBody({ family }: { family: FamilyKey }) {
   const t = useTranslations("pages");
+  const tn = useTranslations("nav");
   const tf = useTranslations("products.familyLead");
+  const locale = useLocale();
   const models = modelsByFamily(family);
+
+  const breadcrumb = breadcrumbJsonLd([
+    { name: tn("home"), url: absoluteUrl("/", locale) },
+    { name: tn("products"), url: absoluteUrl("/products", locale) },
+    { name: t(`${PAGE_KEY[family]}.title`), url: absoluteUrl(PATH_BY_FAMILY[family], locale) },
+  ]);
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <section className="bg-calce px-8 py-24 md:px-20 md:py-32">
         <h1 className="type-display text-display-1 text-grafite">{t(`${PAGE_KEY[family]}.title`)}</h1>
         <p className="type-body text-body-lg mt-6 max-w-xl text-grafite/75">{tf(family)}</p>

@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
+import { simplePageMetadata } from "@/lib/simple-metadata";
 import { CapacitySection } from "@/components/home/CapacitySection";
 import { CtaSection } from "@/components/home/CtaSection";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return simplePageMetadata(locale, "/company", "company", "company");
+}
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

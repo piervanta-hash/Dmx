@@ -2,21 +2,35 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { SITE_URL, buildAlternates } from "@/lib/seo";
+import { organizationJsonLd } from "@/lib/structured-data";
 import { archivo, notoSansGreek } from "../fonts";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import "../globals.css";
 
-export const metadata: Metadata = {
-  title: "Domeinox",
-  description: "Domeinox sh.p.k. — moduli in acciaio, fabbricati in Albania.",
-};
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.home" });
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: { default: t("title"), template: `%s — Domeinox` },
+    description:
+      "Domeinox sh.p.k. — steel container modules, manufactured in Albania — Europe. Domeinox starts from steel.",
+    alternates: buildAlternates("/", locale),
+  };
 }
 
 export default async function LocaleLayout({
@@ -40,6 +54,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${fontVariables} antialiased`}>
       <body className="flex min-h-screen flex-col">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }} />
         <NextIntlClientProvider>
           <SmoothScrollProvider />
           <SiteHeader />

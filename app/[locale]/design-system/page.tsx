@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { PALETTE, RATIOS } from "@/lib/design-tokens";
+
+/** Pagina di riferimento interna per lo sviluppo — mai indicizzata. */
+export const metadata: Metadata = {
+  title: "Design system",
+  robots: { index: false, follow: false },
+};
 
 const SWATCHES: { token: keyof typeof PALETTE; use: string; fg: "grafite" | "calce" }[] = [
   { token: "zinco", use: "Superficie dominante, grandi campiture", fg: "grafite" },
