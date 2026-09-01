@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { archivo } from "../fonts";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -37,6 +38,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${archivo.variable} antialiased`}>
       <body className="flex min-h-screen flex-col">
         <NextIntlClientProvider>
+          <SmoothScrollProvider />
           <SiteHeader />
           <div className="flex-1">{children}</div>
           <SiteFooter />

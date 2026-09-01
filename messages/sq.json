@@ -34,10 +34,17 @@
       "dimensions": "6058 × 2438 mm"
     },
     "assembly": {
-      "eyebrow": "Montimi",
-      "title": "Domeinox niset nga çeliku.",
-      "body": "Shasia saldohet brenda, në stabilimentin tonë. Gjithçka tjetër montohet mbi të. Të tjerët montojnë module të blera gati.",
-      "note": "Sekuenca 3D e lidhur me scroll vjen në Fazën 3. Ky është vendmbajtësi statik."
+      "heading": "Montimi: si përbëhet një modul Domeinox",
+      "fallbackAlt": "Aksonometria e shpërndarë e modulit Domeinox: shasia, dyshemeja, muret, dritaret dhe çatia.",
+      "stages": [
+        "Niset nga toka e livelizuar.",
+        "Shasi prej çeliku S235, e zinkuar. Prodhuar brenda.",
+        "Cemento-dru dhe PVC, 180 mm.",
+        "Panel sandwich, 60 mm.",
+        "Dritare alumini, derë 900 mm.",
+        "Çati 100 mm, me pjerrësi për shkarkimin.",
+        "6058 × 2438 × 2591 mm. Gati për kamion."
+      ]
     },
     "families": {
       "title": "Çfarë prodhojmë",

@@ -1,6 +1,7 @@
 'use client';
 
 import { Canvas } from '@react-three/fiber';
+import { PALETTE } from '@/lib/assembly-data';
 import type { ProgressRef } from './AssemblyScene';
 import { AssemblyScene } from './AssemblyScene';
 
@@ -20,7 +21,7 @@ export function AssemblyCanvas({ progressRef, active }: AssemblyCanvasProps) {
       gl={{ antialias: true, alpha: false }}
       camera={{ fov: 18, near: 1, far: 200, position: [10, 6, 10] }}
     >
-      <color attach="background" args={['#C3C7C1']} />
+      <color attach="background" args={[PALETTE.background]} />
       <AssemblyScene progressRef={progressRef} />
     </Canvas>
   );

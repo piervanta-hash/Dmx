@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { HeroSection } from "@/components/home/HeroSection";
-import { AssemblyPlaceholderSection } from "@/components/home/AssemblyPlaceholderSection";
+import { AssemblyMontageSection } from "@/components/home/AssemblyMontageSection";
 import { ProductFamiliesSection } from "@/components/home/ProductFamiliesSection";
 import { ClassesSection } from "@/components/home/ClassesSection";
 import { ProductionSequenceSection } from "@/components/home/ProductionSequenceSection";
@@ -15,7 +15,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <main className="flex flex-col">
       <HeroSection />
-      <AssemblyPlaceholderSection />
+      <AssemblyMontageSection />
       <ProductFamiliesSection />
       <ClassesSection />
       <ProductionSequenceSection />

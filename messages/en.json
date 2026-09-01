@@ -34,10 +34,17 @@
       "dimensions": "6058 × 2438 mm"
     },
     "assembly": {
-      "eyebrow": "The assembly",
-      "title": "Domeinox starts from steel.",
-      "body": "The frame is welded in-house, in our own workshop. Everything else is assembled onto it. Others assemble modules they buy in.",
-      "note": "The scroll-driven 3D sequence lands in Fase 3. This is the static placeholder."
+      "heading": "The assembly: how a Domeinox module comes together",
+      "fallbackAlt": "Exploded axonometric of the Domeinox module: frame, floor, walls, fixtures and roof.",
+      "stages": [
+        "Starting from level ground.",
+        "S235 steel frame, galvanised. Made in-house.",
+        "Cement-bonded particle board and PVC, 180 mm.",
+        "Sandwich panel, 60 mm.",
+        "Aluminium fixtures, 900 mm door.",
+        "Roof, 100 mm, sloped for drainage.",
+        "6058 × 2438 × 2591 mm. Ready for the trailer."
+      ]
     },
     "families": {
       "title": "What we build",

@@ -34,10 +34,17 @@
       "dimensions": "6058 × 2438 mm"
     },
     "assembly": {
-      "eyebrow": "Il montaggio",
-      "title": "Domeinox parte dall'acciaio.",
-      "body": "Il telaio è saldato in casa, nel nostro stabilimento. Tutto il resto si assembla sopra. Gli altri assemblano moduli comprati.",
-      "note": "La sequenza 3D scroll-driven arriva in Fase 3. Questo è il segnaposto statico."
+      "heading": "Il montaggio: come si compone un modulo Domeinox",
+      "fallbackAlt": "Assonometria esplosa del modulo Domeinox: telaio, pavimento, pareti, serramenti e copertura.",
+      "stages": [
+        "Si parte dal terreno livellato.",
+        "Telaio in acciaio S235, zincato. Prodotto in casa.",
+        "Cementolegno e PVC, 180 mm.",
+        "Pannello sandwich 60 mm.",
+        "Serramenti in alluminio, porta 900 mm.",
+        "Copertura 100 mm, pendenza per lo scarico.",
+        "6058 × 2438 × 2591 mm. Pronto per il bilico."
+      ]
     },
     "families": {
       "title": "Cosa produciamo",

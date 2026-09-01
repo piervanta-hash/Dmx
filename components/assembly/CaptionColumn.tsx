@@ -1,25 +1,24 @@
 'use client';
 
-import { STAGES } from '@/lib/assembly-data';
-
 interface CaptionColumnProps {
   stageIndex: number;
+  captions: string[];
 }
 
 /** Didascalia singola, cambia a ogni stato: solo dissolvenza in opacità, 200ms, niente slide. */
-export function CaptionColumn({ stageIndex }: CaptionColumnProps) {
+export function CaptionColumn({ stageIndex, captions }: CaptionColumnProps) {
   return (
     <div className="relative z-10 flex h-full max-w-sm flex-col justify-center px-6 py-12 md:px-10">
-      {STAGES.map((stage, i) => (
+      {captions.map((caption, i) => (
         <p
-          key={stage.caption}
-          className="absolute text-lg font-medium text-[#24272A] md:text-xl"
+          key={caption}
+          className="type-body absolute text-lg text-grafite md:text-xl"
           style={{
             opacity: i === stageIndex ? 1 : 0,
             transition: 'opacity 200ms linear',
           }}
         >
-          {stage.caption}
+          {caption}
         </p>
       ))}
     </div>
@@ -27,12 +26,12 @@ export function CaptionColumn({ stageIndex }: CaptionColumnProps) {
 }
 
 /** Variante statica: tutte le didascalie impilate (reduced-motion, fallback). */
-export function CaptionColumnStatic() {
+export function CaptionColumnStatic({ captions }: { captions: string[] }) {
   return (
     <div className="flex flex-col gap-4 px-6 py-12 md:px-10">
-      {STAGES.map((stage) => (
-        <p key={stage.caption} className="text-lg font-medium text-[#24272A] md:text-xl">
-          {stage.caption}
+      {captions.map((caption) => (
+        <p key={caption} className="type-body text-lg text-grafite md:text-xl">
+          {caption}
         </p>
       ))}
     </div>

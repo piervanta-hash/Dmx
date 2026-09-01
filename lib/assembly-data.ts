@@ -3,6 +3,8 @@
 // Ogni pezzo è definito con pivot alla base (y locale 0 = base del pezzo): la `baseY`
 // sotto è quindi la quota di appoggio, non il centro geometrico.
 
+import { PALETTE as DESIGN_PALETTE } from './design-tokens';
+
 export type Vec3 = [number, number, number];
 
 export interface PieceDef {
@@ -16,16 +18,18 @@ export interface PieceDef {
   color: string;
 }
 
+// Ruoli del montaggio sui soli sei token del sistema di design — nessun colore fuori
+// palette, nemmeno una sfumatura extra per differenziare pareti e copertura.
 export const PALETTE = {
-  frame: '#9E4B32',
-  floor: '#E4E6E1',
-  wall: '#EDEEEA',
-  roof: '#F2F3F0',
-  window: '#C3C7C1',
-  door: '#24272A',
-  edge: '#24272A',
-  background: '#C3C7C1',
-  dimensionLine: '#16558F',
+  frame: DESIGN_PALETTE.minio,
+  floor: DESIGN_PALETTE.pav,
+  wall: DESIGN_PALETTE.calce,
+  roof: DESIGN_PALETTE.calce,
+  window: DESIGN_PALETTE.zinco,
+  door: DESIGN_PALETTE.grafite,
+  edge: DESIGN_PALETTE.grafite,
+  background: DESIGN_PALETTE.zinco,
+  dimensionLine: DESIGN_PALETTE.genziana,
 };
 
 export const MODULE = {
@@ -202,20 +206,21 @@ export const wall1Openings: WallOpening[] = [
 ];
 
 // --- Sequenza / storyboard ---
+// Solo il timing: le didascalie sono contenuto (home.assembly.stages nei file di
+// lingua), non dati geometrici — vivono nei messaggi, non qui.
 export interface Stage {
   from: number;
   to: number;
-  caption: string;
 }
 
 export const STAGES: Stage[] = [
-  { from: 0.0, to: 0.08, caption: 'Si parte dal terreno livellato.' },
-  { from: 0.08, to: 0.26, caption: 'Telaio in acciaio S235, zincato. Prodotto in casa.' },
-  { from: 0.26, to: 0.42, caption: 'Cementolegno e PVC, 180 mm.' },
-  { from: 0.42, to: 0.64, caption: 'Pannello sandwich 60 mm.' },
-  { from: 0.64, to: 0.8, caption: 'Serramenti in alluminio, porta 900 mm.' },
-  { from: 0.8, to: 0.92, caption: 'Copertura 100 mm, pendenza per lo scarico.' },
-  { from: 0.92, to: 1.0, caption: `${MODULE.length} × ${MODULE.width} × ${MODULE.height} mm. Pronto per il bilico.` },
+  { from: 0.0, to: 0.08 },
+  { from: 0.08, to: 0.26 },
+  { from: 0.26, to: 0.42 },
+  { from: 0.42, to: 0.64 },
+  { from: 0.64, to: 0.8 },
+  { from: 0.8, to: 0.92 },
+  { from: 0.92, to: 1.0 },
 ];
 
 export const SCALE = 0.001;

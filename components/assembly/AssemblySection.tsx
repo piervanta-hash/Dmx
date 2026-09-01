@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { CaptionColumn, CaptionColumnStatic } from './CaptionColumn';
 import { DimensionOverlay } from './DimensionOverlay';
-import { STAGES, PIN_DURATION_VH, MOBILE_AUTOPLAY_MS, PALETTE } from '@/lib/assembly-data';
+import { STAGES, PIN_DURATION_VH, MOBILE_AUTOPLAY_MS } from '@/lib/assembly-data';
 import { OVERLAY_THRESHOLD } from '@/lib/assembly-motion';
 
 if (typeof window !== 'undefined') {
@@ -25,6 +25,12 @@ const AssemblyCanvas = dynamic(() => import('./AssemblyCanvas').then((m) => m.As
 interface AssemblySectionProps {
   /** Immagine statica dell'assonometria esplosa: fallback pre-caricamento, no-JS, reduced-motion. */
   fallbackSrc?: string;
+  /** Titolo accessibile della sezione (sr-only / aria-label), localizzato dal chiamante. */
+  heading: string;
+  /** Testo alternativo dell'immagine statica, localizzato dal chiamante. */
+  fallbackAlt: string;
+  /** Una didascalia per ciascuna delle sette fasi dello storyboard, localizzate dal chiamante. */
+  captions: string[];
 }
 
 function stageIndexFromProgress(progress: number): number {
@@ -33,7 +39,12 @@ function stageIndexFromProgress(progress: number): number {
   return progress >= 1 ? STAGES.length - 1 : 0;
 }
 
-export function AssemblySection({ fallbackSrc = '/assembly-fallback.svg' }: AssemblySectionProps) {
+export function AssemblySection({
+  fallbackSrc = '/assembly-fallback.svg',
+  heading,
+  fallbackAlt,
+  captions,
+}: AssemblySectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   // Contenitore mutabile per il progresso: aggiornato ad ogni tick di scroll/autoplay senza
@@ -135,11 +146,11 @@ export function AssemblySection({ fallbackSrc = '/assembly-fallback.svg' }: Asse
   // --- Reduced motion: niente canvas, niente pin. Assonometria statica + didascalie in colonna. ---
   if (reducedMotion) {
     return (
-      <section className="relative flex flex-col items-center gap-8 py-16" style={{ background: PALETTE.background }}>
-        <h2 className="sr-only">Il montaggio</h2>
+      <section className="relative flex flex-col items-center gap-8 bg-zinco py-16">
+        <h2 className="sr-only">{heading}</h2>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={fallbackSrc} alt="Assonometria esplosa del modulo Domeinox: telaio, pavimento, pareti, serramenti e copertura." className="w-full max-w-3xl px-6" />
-        <CaptionColumnStatic />
+        <img src={fallbackSrc} alt={fallbackAlt} className="w-full max-w-3xl px-6" />
+        <CaptionColumnStatic captions={captions} />
       </section>
     );
   }
@@ -147,9 +158,8 @@ export function AssemblySection({ fallbackSrc = '/assembly-fallback.svg' }: Asse
   return (
     <section
       ref={sectionRef}
-      className="relative h-[100svh] w-full overflow-hidden"
-      style={{ background: PALETTE.background }}
-      aria-label="Il montaggio: come si compone un modulo Domeinox"
+      className="relative h-[100svh] w-full overflow-hidden bg-zinco"
+      aria-label={heading}
     >
       <div ref={stageRef} className="relative h-full w-full">
         {/* Fallback statico: visibile finché il canvas non è montato. */}
@@ -157,7 +167,7 @@ export function AssemblySection({ fallbackSrc = '/assembly-fallback.svg' }: Asse
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={fallbackSrc}
-            alt="Assonometria esplosa del modulo Domeinox."
+            alt={fallbackAlt}
             className="absolute inset-0 h-full w-full object-cover"
           />
         )}
@@ -169,7 +179,7 @@ export function AssemblySection({ fallbackSrc = '/assembly-fallback.svg' }: Asse
         <DimensionOverlay visible={overlayVisible} />
 
         <div className="pointer-events-none absolute inset-0 flex items-center">
-          <CaptionColumn stageIndex={stageIndex} />
+          <CaptionColumn stageIndex={stageIndex} captions={captions} />
         </div>
       </div>
     </section>
