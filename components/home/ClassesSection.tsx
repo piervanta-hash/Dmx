@@ -11,7 +11,7 @@ export function ClassesSection() {
       <div className="mt-16 grid gap-12 md:grid-cols-2 md:gap-16">
         {(["classA", "classB"] as const).map((cls) => (
           <div key={cls}>
-            <p className="type-display text-display-3 text-genziana">{t(`${cls}.label`)}</p>
+            <p className="type-display text-display-3 text-genziana-scuro">{t(`${cls}.label`)}</p>
             <p className="type-data mt-3 text-calce/60">{t(`${cls}.width`)}</p>
             <p className="type-body mt-6 text-calce/85">{t(`${cls}.transport`)}</p>
             <p className="type-body mt-4 text-calce/60">{t(`${cls}.use`)}</p>

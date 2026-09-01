@@ -20,7 +20,9 @@ export function ProductionSequenceSection() {
       <div className="mt-14 flex flex-col gap-16 pl-8 pr-6 md:pl-20 md:pr-12">
         {STEPS.map((step, i) => (
           <div key={step} className="grid gap-6 md:grid-cols-[auto_1fr_1.4fr] md:items-center md:gap-10">
-            <span className="type-display text-display-3 text-grafite/25">{String(i + 1).padStart(2, "0")}</span>
+            <span className="type-display text-display-3 text-grafite/60">
+              {String(i + 1).padStart(2, "0")}
+            </span>
             <ImagePlaceholder slot={`domeinox-produzione-${step}.jpg`} ratio="fianco" caption="" className="md:max-w-sm" />
             <div>
               <h3 className="type-display text-display-3 text-grafite">{t(`steps.${step}.title`)}</h3>

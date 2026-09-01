@@ -36,7 +36,7 @@ export function SiteFooter() {
 
       <div className="mt-16 flex flex-col gap-4 border-t border-grafite/15 pt-8 md:flex-row md:items-end md:justify-between">
         <LocaleSwitcher tone="onLight" />
-        <div className="type-data flex flex-col gap-1 text-grafite/55 md:items-end md:text-right">
+        <div className="type-data flex flex-col gap-1 text-grafite/75 md:items-end md:text-right">
           <p>{tf("languageNote")}</p>
           <p>
             © {year} Domeinox sh.p.k. {tf("rights")}

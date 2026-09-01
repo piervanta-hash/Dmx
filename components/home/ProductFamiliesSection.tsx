@@ -49,11 +49,11 @@ export function ProductFamiliesSection() {
                 <p className="type-body mt-2 max-w-md text-grafite/75">{t(`${key}.description`)}</p>
                 <dl className="type-data mt-6 flex flex-wrap gap-x-10 gap-y-2 text-grafite/70">
                   <div>
-                    <dt className="text-grafite/45">{tc("area")}</dt>
+                    <dt className="text-grafite/75">{tc("area")}</dt>
                     <dd>{t(`${key}.area`)}</dd>
                   </div>
                   <div>
-                    <dt className="text-grafite/45">{tc("leadTime")}</dt>
+                    <dt className="text-grafite/75">{tc("leadTime")}</dt>
                     <dd>{t(`${key}.leadTime`)}</dd>
                   </div>
                 </dl>

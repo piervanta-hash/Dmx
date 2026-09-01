@@ -14,8 +14,8 @@ export function HeroSection() {
     <section className="relative flex h-[100svh] min-h-[560px] items-end bg-pav">
       <HeroDimensionOverlay width="6058 mm" height="2438 mm" />
       <div className="absolute right-6 top-6 flex flex-col items-end md:right-12 md:top-10">
-        <span className="type-data text-grafite/50">domeinox-hero-a20-fianco.jpg</span>
-        <span className="type-data text-grafite/50">2,34 : 1</span>
+        <span className="type-data text-grafite/75">domeinox-hero-a20-fianco.jpg</span>
+        <span className="type-data text-grafite/75">2,34 : 1</span>
       </div>
       <div className="pb-8 md:pb-14">
         <p className="type-display text-display-1 text-grafite">{t("model")}</p>

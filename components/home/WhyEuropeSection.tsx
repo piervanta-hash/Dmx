@@ -16,7 +16,7 @@ export function WhyEuropeSection() {
       <p className="type-body text-body-lg mt-4 max-w-2xl text-grafite/75">{t("lead")}</p>
 
       <div className="mt-14 max-w-2xl">
-        <p className="type-data mb-6 text-grafite/55">{t("mapNote")}</p>
+        <p className="type-data mb-6 text-grafite/80">{t("mapNote")}</p>
         <div className="flex flex-col">
           {PORTS.map((port) => (
             <div
@@ -24,7 +24,7 @@ export function WhyEuropeSection() {
               className="flex flex-col gap-1 border-t border-grafite/15 py-5 last:border-b sm:flex-row sm:items-center sm:justify-between sm:gap-6"
             >
               <span className="type-body text-grafite">{t(`ports.${port}`)}</span>
-              <span className="type-data text-grafite/55">{t("timeToConfirm")}</span>
+              <span className="type-data text-grafite/80">{t("timeToConfirm")}</span>
             </div>
           ))}
         </div>

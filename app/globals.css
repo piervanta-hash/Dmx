@@ -13,6 +13,7 @@
   --color-calce: #edeeea; /* fondo chiaro, freddo */
   --color-pav: #e4e6e1; /* riempimento interno nelle planimetrie */
   --color-genziana: #16558f; /* accento unico: link, stati attivi, quote */
+  --color-genziana-scuro: #82a2bc; /* stessa tinta, schiarita per il contrasto AA su fondo grafite */
   --color-minio: #9e4b32; /* solo il telaio in acciaio */
 
   --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;

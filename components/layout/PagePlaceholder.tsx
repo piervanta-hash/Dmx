@@ -23,7 +23,7 @@ export function PagePlaceholder({ pageKey }: { pageKey: PageKey }) {
 
   return (
     <section className="bg-zinco px-8 py-24 md:px-20 md:py-32">
-      <p className="type-data text-grafite/60">{tp("label")}</p>
+      <p className="type-data text-grafite/75">{tp("label")}</p>
       <h1 className="type-display text-display-1 mt-4 text-grafite">{t(`${pageKey}.title`)}</h1>
       <p className="type-body mt-6 max-w-xl text-grafite/75">{tp("note")}</p>
     </section>

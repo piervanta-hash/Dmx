@@ -26,7 +26,7 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={`type-body text-sm transition-colors ${
-                  active ? "text-genziana" : "text-calce/75 hover:text-calce"
+                  active ? "text-genziana-scuro" : "text-calce/75 hover:text-calce"
                 }`}
               >
                 {t(item.messageKey)}
@@ -62,7 +62,7 @@ export function SiteHeader() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className={`type-display text-display-3 ${active ? "text-genziana" : "text-calce"}`}
+                  className={`type-display text-display-3 ${active ? "text-genziana-scuro" : "text-calce"}`}
                 >
                   {t(item.messageKey)}
                 </Link>

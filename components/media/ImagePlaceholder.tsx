@@ -17,9 +17,9 @@ export function ImagePlaceholder({ slot, ratio, caption, className = "" }: Image
       <div
         className={`${aspectClass} flex w-full items-end justify-start bg-pav p-4 outline outline-1 -outline-offset-1 outline-grafite/20`}
       >
-        <span className="type-data text-grafite/45">{slot}</span>
+        <span className="type-data text-grafite/75">{slot}</span>
       </div>
-      {caption && <p className="type-data mt-2 text-grafite/60">{caption}</p>}
+      {caption && <p className="type-data mt-2 text-grafite/75">{caption}</p>}
     </div>
   );
 }

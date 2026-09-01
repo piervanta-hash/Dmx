@@ -11,6 +11,9 @@ export const PALETTE = {
   pav: '#E4E6E1', // riempimento interno nelle planimetrie
   genziana: '#16558F', // accento unico: link, stati attivi, quote
   minio: '#9E4B32', // solo il telaio in acciaio
+  /** Stessa tinta di genziana, schiarita per restare leggibile (AA) su fondo grafite.
+   *  Non è un settimo colore: è genziana adattata al fondo scuro, non un accento nuovo. */
+  genzianaSuScuro: '#82A2BC',
 } as const;
 
 export type PaletteToken = keyof typeof PALETTE;

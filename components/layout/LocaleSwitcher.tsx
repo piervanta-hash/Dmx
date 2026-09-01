@@ -14,7 +14,7 @@ export function LocaleSwitcher({ tone = "onDark" }: LocaleSwitcherProps) {
   const pathname = usePathname();
   const router = useRouter();
 
-  const mutedClass = tone === "onDark" ? "text-calce/60 hover:text-calce" : "text-grafite/55 hover:text-grafite";
+  const mutedClass = tone === "onDark" ? "text-calce/60 hover:text-calce" : "text-grafite/75 hover:text-grafite";
   const activeClass = tone === "onDark" ? "text-calce" : "text-grafite";
 
   return (
