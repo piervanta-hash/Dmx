@@ -58,7 +58,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           <SmoothScrollProvider />
           <SiteHeader />
-          <div className="flex-1">{children}</div>
+          <main className="flex-1">{children}</main>
           <SiteFooter />
         </NextIntlClientProvider>
       </body>

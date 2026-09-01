@@ -14,6 +14,9 @@ export const PALETTE = {
   /** Stessa tinta di genziana, schiarita per restare leggibile (AA) su fondo grafite.
    *  Non è un settimo colore: è genziana adattata al fondo scuro, non un accento nuovo. */
   genzianaSuScuro: '#82A2BC',
+  /** Stessa tinta, scurita: genziana su testo piccolo scende a 4.49:1 su fondo zinco
+   *  (misurato con Lighthouse), sotto la soglia AA 4.5:1. Stesso principio di genzianaSuScuro. */
+  genzianaTesto: '#155188',
 } as const;
 
 export type PaletteToken = keyof typeof PALETTE;

@@ -32,14 +32,14 @@ export function FamilyModelCard({ model }: { model: ModelData }) {
         <ImagePlaceholder slot={`domeinox-${model.code.toLowerCase()}-fronte.jpg`} ratio="fronte" caption="" />
       </div>
       <div>
-        <p className="type-data text-genziana">
+        <p className="type-data text-genziana-testo">
           {model.code} — {classLabel}
         </p>
-        <h3 className="type-display text-display-3 mt-1 text-grafite group-hover:text-genziana">
+        <h2 className="type-display text-display-3 mt-1 text-grafite group-hover:text-genziana-testo">
           {t(`${model.code}.name`)}
-        </h3>
+        </h2>
         <p className="type-body mt-2 max-w-md text-grafite/75">{t(`${model.code}.description`)}</p>
-        <dl className="type-data mt-6 flex flex-wrap gap-x-10 gap-y-2 text-grafite/70">
+        <dl className="type-data mt-6 flex flex-wrap gap-x-10 gap-y-2 text-grafite/75">
           <div>
             <dt className="text-grafite/75">{common("area")}</dt>
             <dd>{formatArea(model.areaNet, locale)}</dd>

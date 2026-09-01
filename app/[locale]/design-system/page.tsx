@@ -29,7 +29,7 @@ export default async function DesignSystemPage({ params }: { params: Promise<{ l
   setRequestLocale(locale);
 
   return (
-    <main className="flex flex-col">
+    <div className="flex flex-col">
       {/* Intestazione */}
       <section className="bg-grafite py-16 pl-8 pr-6 md:py-24 md:pl-20 md:pr-12">
         <p className="type-data mb-3 text-calce/70">Fase 0 — fondamenta</p>
@@ -68,26 +68,26 @@ export default async function DesignSystemPage({ params }: { params: Promise<{ l
 
         <div className="mt-14 flex flex-col gap-12">
           <div>
-            <p className="type-data mb-3 text-genziana">display-1 · wdth 122 · wght 700</p>
+            <p className="type-data mb-3 text-genziana-testo">display-1 · wdth 122 · wght 700</p>
             <p className="type-display text-display-1 text-grafite">Domeinox parte dall&apos;acciaio.</p>
           </div>
           <div>
-            <p className="type-data mb-3 text-genziana">display-2</p>
+            <p className="type-data mb-3 text-genziana-testo">display-2</p>
             <p className="type-display text-display-2 text-grafite">Il montaggio.</p>
           </div>
           <div>
-            <p className="type-data mb-3 text-genziana">display-3</p>
+            <p className="type-data mb-3 text-genziana-testo">display-3</p>
             <p className="type-display text-display-3 text-grafite">Le due classi.</p>
           </div>
           <div className="max-w-2xl">
-            <p className="type-data mb-3 text-genziana">body · wdth 100 · wght 400 · riga max 68ch</p>
+            <p className="type-data mb-3 text-genziana-testo">body · wdth 100 · wght 400 · riga max 68ch</p>
             <p className="type-body text-body-lg text-grafite">
               Domeinox sh.p.k., carpenteria in acciaio in Albania, produce internamente dalla
               lamiera al modulo finito e arredato. Gli altri assemblano moduli comprati.
             </p>
           </div>
           <div className="max-w-xl">
-            <p className="type-data mb-3 text-genziana">data · tabular-nums, mai monospace</p>
+            <p className="type-data mb-3 text-genziana-testo">data · tabular-nums, mai monospace</p>
             <table className="type-data w-full text-grafite">
               <thead>
                 <tr className="border-b border-grafite/25 text-left">
@@ -149,10 +149,10 @@ export default async function DesignSystemPage({ params }: { params: Promise<{ l
         <p className="type-body mt-4 max-w-xl text-calce/85">
           Due soli momenti orchestrati in tutto il sito: il montaggio 3D nella home e le quote che
           si disegnano sopra i render dei prodotti. Tutto il resto è fermo o risponde a
-          un&apos;azione. <code className="type-data text-genziana">prefers-reduced-motion</code>{" "}
+          un&apos;azione. <code className="type-data text-genziana-scuro">prefers-reduced-motion</code>{" "}
           rispettato ovunque — verificato in Fase 3.
         </p>
       </section>
-    </main>
+    </div>
   );
 }

@@ -48,7 +48,7 @@ export function ProductSpecTable({ model }: { model: ModelData }) {
       <tbody>
         {rows.map((row) => (
           <tr key={row.label} className="border-b border-grafite/15">
-            <th className="w-1/2 py-3 pr-6 text-left font-normal text-grafite/70 md:w-2/5">{row.label}</th>
+            <th className="w-1/2 py-3 pr-6 text-left font-normal text-grafite/75 md:w-2/5">{row.label}</th>
             <td className="py-3 text-grafite">{row.value}</td>
           </tr>
         ))}

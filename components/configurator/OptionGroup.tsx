@@ -17,7 +17,7 @@ export function OptionGroup<T extends string>({ name, legend, options, value, on
           <label
             key={opt}
             className={`type-body flex cursor-pointer items-center gap-4 border px-6 py-4 transition-colors ${
-              value === opt ? "border-genziana text-genziana" : "border-grafite/25 text-grafite hover:border-grafite/50"
+              value === opt ? "border-genziana text-genziana-testo" : "border-grafite/25 text-grafite hover:border-grafite/50"
             }`}
           >
             <input

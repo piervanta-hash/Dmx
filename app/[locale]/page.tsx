@@ -13,7 +13,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   setRequestLocale(locale);
 
   return (
-    <main className="flex flex-col">
+    <div className="flex flex-col">
       <HeroSection />
       <AssemblyMontageSection />
       <ProductFamiliesSection />
@@ -22,6 +22,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <WhyEuropeSection />
       <CapacitySection />
       <CtaSection />
-    </main>
+    </div>
   );
 }

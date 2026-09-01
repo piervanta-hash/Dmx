@@ -76,13 +76,24 @@ export function AssemblySection({
   }, []);
 
   // Monta il canvas 3D solo quando la sezione si avvicina al viewport: il canvas non è mai l'LCP.
+  // Sotto un hero a piena altezza la sezione rientra nel rootMargin già al primo render:
+  // l'attesa dell'idle callback evita che l'import di three.js/R3F contenda il thread
+  // principale con il paint dell'LCP (misurato con Lighthouse, non solo per prudenza).
   useEffect(() => {
     if (reducedMotion !== false || !sectionRef.current) return;
     const el = sectionRef.current;
+    const mountWhenIdle = () => {
+      const ric = window.requestIdleCallback;
+      if (ric) {
+        ric(() => setShouldMount(true), { timeout: 2000 });
+      } else {
+        window.setTimeout(() => setShouldMount(true), 200);
+      }
+    };
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0]?.isIntersecting) {
-          setShouldMount(true);
+          mountWhenIdle();
           observer.disconnect();
         }
       },

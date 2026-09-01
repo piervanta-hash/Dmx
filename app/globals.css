@@ -14,6 +14,7 @@
   --color-pav: #e4e6e1; /* riempimento interno nelle planimetrie */
   --color-genziana: #16558f; /* accento unico: link, stati attivi, quote */
   --color-genziana-scuro: #82a2bc; /* stessa tinta, schiarita per il contrasto AA su fondo grafite */
+  --color-genziana-testo: #155188; /* stessa tinta, scurita — genziana su testo piccolo sopra fondo zinco scende a 4.49:1 (misurato con Lighthouse), sotto la soglia AA 4.5:1 */
   --color-minio: #9e4b32; /* solo il telaio in acciaio */
 
   --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
