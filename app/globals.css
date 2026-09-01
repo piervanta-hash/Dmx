@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Tema ridefinito, non esteso: azzeriamo la palette di default di Tailwind e
+   dichiariamo solo i sei token della gamma Domeinox. Chi scrive bg-red-500
+   per errore deve vedere un utility inesistente, non un rosso qualsiasi. */
+@theme {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --color-zinco: #c3c7c1; /* superficie dominante — non il bianco */
+  --color-grafite: #24272a; /* testo, sezioni scure a piena pagina */
+  --color-calce: #edeeea; /* fondo chiaro, freddo */
+  --color-pav: #e4e6e1; /* riempimento interno nelle planimetrie */
+  --color-genziana: #16558f; /* accento unico: link, stati attivi, quote */
+  --color-minio: #9e4b32; /* solo il telaio in acciaio */
+
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+
+  /* Scala tipografica. Ruoli, non nomi generici h1/h2: display per i titoli,
+     body per il testo corrente, data per le tabelle tecniche. */
+  --text-display-1: clamp(2.75rem, 2rem + 3vw, 6rem);
+  --text-display-1--line-height: 0.95;
+  --text-display-2: clamp(2rem, 1.4rem + 2.4vw, 3.75rem);
+  --text-display-2--line-height: 0.95;
+  --text-display-3: clamp(1.5rem, 1.2rem + 1.2vw, 2.25rem);
+  --text-display-3--line-height: 1;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.55;
+  --text-body: 1rem;
+  --text-body--line-height: 1.55;
+  --text-data: 0.9375rem;
+  --text-data--line-height: 1.4;
+
+  /* Le uniche due proporzioni ammesse in tutto il sito. */
+  --aspect-fronte: 2438 / 2591;
+  --aspect-fianco: 6058 / 2591;
+
+  --radius-none: 0px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Le due "voci" tipografiche del sito, sull'unico asse variabile di Archivo. */
+@utility type-display {
+  font-variation-settings: "wdth" 122, "wght" 700;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility type-body {
+  font-variation-settings: "wdth" 100, "wght" 400;
+  max-width: 68ch;
+}
+
+@utility type-data {
+  font-variation-settings: "wdth" 100, "wght" 400;
+  font-variant-numeric: tabular-nums;
+}
+
+* {
+  border-radius: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-zinco);
+  color: var(--color-grafite);
+  font-family: var(--font-sans);
 }
