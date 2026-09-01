@@ -50,8 +50,20 @@ export function ModelPageBody({ model }: { model: ModelData }) {
 
       <section className="bg-zinco px-8 py-16 md:px-20 md:py-24">
         <div className="grid gap-10 md:grid-cols-2 md:gap-16">
-          <ImagePlaceholder slot={`domeinox-${model.code.toLowerCase()}-fronte.jpg`} ratio="fronte" caption="" />
-          <ImagePlaceholder slot={`domeinox-${model.code.toLowerCase()}-fianco.jpg`} ratio="fianco" caption="" />
+          <ImagePlaceholder
+            slot={`domeinox-${model.code.toLowerCase()}-fronte.jpg`}
+            ratio="fronte"
+            caption=""
+            src={`/renders/${model.family}-fronte.svg`}
+            alt={`${title} — end elevation`}
+          />
+          <ImagePlaceholder
+            slot={`domeinox-${model.code.toLowerCase()}-fianco.jpg`}
+            ratio="fianco"
+            caption=""
+            src={`/renders/${model.family}-fianco.svg`}
+            alt={`${title} — side elevation`}
+          />
         </div>
       </section>
 

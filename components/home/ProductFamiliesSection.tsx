@@ -40,7 +40,13 @@ export function ProductFamiliesSection() {
               className="group flex flex-col gap-6 border-t border-grafite/15 py-10 pl-8 pr-6 last:border-b md:flex-row md:items-center md:gap-16 md:py-12 md:pl-20 md:pr-12"
             >
               <div className="w-full md:w-72 md:shrink-0">
-                <ImagePlaceholder slot={SLOTS[family.messageKey]} ratio="fronte" caption="" />
+                <ImagePlaceholder
+                  slot={SLOTS[family.messageKey]}
+                  ratio="fronte"
+                  caption=""
+                  src={`/renders/${key}-fronte.svg`}
+                  alt={t(`${key}.name`)}
+                />
               </div>
               <div>
                 <h3 className="type-display text-display-3 text-grafite group-hover:text-genziana">

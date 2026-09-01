@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 427.7" role="img" aria-label="Finishing and functional testing">
+  <rect x="0" y="0" width="1000" height="427.7" fill="#EDEEEA"/>
+  
+    <rect x="180" y="70" width="640" height="280" fill="#EDEEEA" stroke="#24272A" stroke-width="10"/>
+    <rect x="230" y="120" width="220" height="180" fill="none" stroke="#16558F" stroke-width="10"/>
+    <line x1="230" y1="210" x2="450" y2="210" stroke="#16558F" stroke-width="8"/>
+    <path d="M540 260 L610 320 L780 130" stroke="#9E4B32" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+</svg>

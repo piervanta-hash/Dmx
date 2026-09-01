@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 427.7" role="img" aria-label="Welding and treatment">
+  <rect x="0" y="0" width="1000" height="427.7" fill="#EDEEEA"/>
+  
+    <rect x="150" y="230" width="600" height="90" fill="#E4E6E1" stroke="#24272A" stroke-width="10"/>
+    <line x1="620" y1="230" x2="800" y2="70" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="800" y1="70" x2="860" y2="40" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="640" cy="220" r="22" fill="#9E4B32"/>
+    <path d="M600 150 L620 190" stroke="#16558F" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M650 140 L655 185" stroke="#16558F" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M695 160 L670 195" stroke="#16558F" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+</svg>

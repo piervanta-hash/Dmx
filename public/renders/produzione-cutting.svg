@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 427.7" role="img" aria-label="Cutting and shaping — steel profiles">
+  <rect x="0" y="0" width="1000" height="427.7" fill="#EDEEEA"/>
+  
+    <line x1="120" y1="330" x2="520" y2="60" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="60" y1="120" x2="460" y2="330" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="330" cy="200" r="14" fill="#9E4B32"/>
+    <rect x="560" y="90" width="340" height="230" fill="#E4E6E1" stroke="#24272A" stroke-width="10"/>
+    <line x1="600" y1="140" x2="860" y2="140" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="600" y1="200" x2="860" y2="200" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="600" y1="260" x2="860" y2="260" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+</svg>

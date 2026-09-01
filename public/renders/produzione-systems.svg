@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 427.7" role="img" aria-label="Electrical and plumbing systems">
+  <rect x="0" y="0" width="1000" height="427.7" fill="#EDEEEA"/>
+  
+    <rect x="150" y="70" width="700" height="280" fill="none" stroke="#24272A" stroke-width="8" stroke-opacity="0.3"/>
+    <path d="M200 350 V220 H420 V120" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M500 350 V180 H700 V90" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="420" cy="120" r="16" fill="#16558F"/>
+    <circle cx="700" cy="90" r="16" fill="#16558F"/>
+    <circle cx="200" cy="350" r="10" fill="#9E4B32"/>
+    <circle cx="500" cy="350" r="10" fill="#9E4B32"/>
+  
+</svg>

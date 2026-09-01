@@ -23,7 +23,14 @@ export function ProductionSequenceSection() {
             <span className="type-display text-display-3 text-grafite/60">
               {String(i + 1).padStart(2, "0")}
             </span>
-            <ImagePlaceholder slot={`domeinox-produzione-${step}.jpg`} ratio="fianco" caption="" className="md:max-w-sm" />
+            <ImagePlaceholder
+              slot={`domeinox-produzione-${step}.jpg`}
+              ratio="fianco"
+              caption=""
+              className="md:max-w-sm"
+              src={`/renders/produzione-${step}.svg`}
+              alt={t(`steps.${step}.title`)}
+            />
             <div>
               <h3 className="type-display text-display-3 text-grafite">{t(`steps.${step}.title`)}</h3>
               <p className="type-body mt-2 max-w-md text-grafite/75">{t(`steps.${step}.body`)}</p>

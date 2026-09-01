@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 427.7" role="img" aria-label="Insulation and cladding — sandwich panels">
+  <rect x="0" y="0" width="1000" height="427.7" fill="#EDEEEA"/>
+  
+    <rect x="140" y="90" width="260" height="260" fill="#EDEEEA" stroke="#24272A" stroke-width="10"/>
+    <rect x="430" y="90" width="260" height="260" fill="#C3C7C1" stroke="#24272A" stroke-width="10"/>
+    <rect x="720" y="90" width="150" height="260" fill="#E4E6E1" stroke="#24272A" stroke-width="10"/>
+    <line x1="140" y1="150" x2="400" y2="150" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14 14"/>
+    <line x1="140" y1="220" x2="400" y2="220" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14 14"/>
+    <line x1="140" y1="290" x2="400" y2="290" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14 14"/>
+  
+</svg>

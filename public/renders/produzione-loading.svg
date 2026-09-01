@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 427.7" role="img" aria-label="Loading onto the trailer">
+  <rect x="0" y="0" width="1000" height="427.7" fill="#EDEEEA"/>
+  
+    <rect x="120" y="150" width="500" height="150" fill="#EDEEEA" stroke="#24272A" stroke-width="10"/>
+    <rect x="620" y="230" width="160" height="70" fill="#C3C7C1" stroke="#24272A" stroke-width="10"/>
+    <circle cx="260" cy="330" r="30" fill="#24272A"/>
+    <circle cx="480" cy="330" r="30" fill="#24272A"/>
+    <circle cx="700" cy="330" r="26" fill="#24272A"/>
+    <line x1="120" y1="360" x2="860" y2="360" stroke="#24272A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+</svg>
