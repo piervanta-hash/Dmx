@@ -1,4 +1,8 @@
 {
+  "common": {
+    "area": "Sipërfaqja",
+    "leadTime": "Afati i dorëzimit"
+  },
   "nav": {
     "home": "Ballina",
     "products": "Produktet",
@@ -24,20 +28,177 @@
     "label": "Faqe në përgatitje",
     "note": "Përmbajtja vjen në një fazë të mëvonshme — shih planin e sajtit."
   },
+  "home": {
+    "hero": {
+      "model": "A20",
+      "dimensions": "6058 × 2438 mm"
+    },
+    "assembly": {
+      "eyebrow": "Montimi",
+      "title": "Domeinox niset nga çeliku.",
+      "body": "Shasia saldohet brenda, në stabilimentin tonë. Gjithçka tjetër montohet mbi të. Të tjerët montojnë module të blera gati.",
+      "note": "Sekuenca 3D e lidhur me scroll vjen në Fazën 3. Ky është vendmbajtësi statik."
+    },
+    "families": {
+      "title": "Çfarë prodhojmë",
+      "lead": "Pesë familje, nëntë modele bazë. Secili ekziston sepse zgjidhte një problem shpërndarjeje, jo sepse i duhej një katalogu.",
+      "offices": {
+        "name": "Zyra",
+        "description": "Zyrë e hapur, dy vendpune",
+        "area": "13,8 m² neto",
+        "leadTime": "afati i dorëzimit për t'u konfirmuar"
+      },
+      "housing": {
+        "name": "Banesa",
+        "description": "Dhomë dyshe me banjë private",
+        "area": "9,6 + 4,0 m² neto",
+        "leadTime": "afati i dorëzimit për t'u konfirmuar"
+      },
+      "sanitary": {
+        "name": "Njësi sanitare",
+        "description": "Katër kabina WC, tre lavamane",
+        "area": "14,8 m² bruto",
+        "leadTime": "afati i dorëzimit për t'u konfirmuar"
+      },
+      "special": {
+        "name": "Njësi speciale",
+        "description": "Roje dhe pikë kontrolli",
+        "area": "6,7 m² neto",
+        "leadTime": "afati i dorëzimit për t'u konfirmuar"
+      },
+      "hospitality": {
+        "name": "Mikpritje",
+        "description": "Dhomë me banjë private",
+        "area": "14,5 + 5,1 m² neto",
+        "leadTime": "afati i dorëzimit për t'u konfirmuar"
+      }
+    },
+    "classes": {
+      "title": "Dy klasat",
+      "lead": "Dallimi që shumica e konkurrentëve nuk e deklarojnë, dhe që përcakton koston reale të një furnizimi.",
+      "classA": {
+        "label": "Klasa A",
+        "width": "2438 mm gjerësi e jashtme",
+        "transport": "Ngarkesë e vetme mbi kamion standard. Pa autorizim. E stivueshme, e trajtueshme me pajisje ISO.",
+        "use": "Kantier, banesa, njësi sanitare, urgjenca, agregime."
+      },
+      "classB": {
+        "label": "Klasa B",
+        "width": "3000 mm gjerësi e jashtme",
+        "transport": "Flat-pack në dërgesë, montim në vend. Si ngarkesë e vetme kërkon autorizim special.",
+        "use": "Zyra komode, mikpritje, qëndrime të gjata."
+      }
+    },
+    "production": {
+      "title": "Nga çeliku te moduli",
+      "lead": "Sekuenca reale. Fotografi stabilimenti, jo render.",
+      "steps": {
+        "cutting": {
+          "title": "Prerja dhe formimi",
+          "body": "Profilet e çelikut priten dhe formohen sipas vizatimeve të shasisë."
+        },
+        "welding": {
+          "title": "Saldimi dhe trajtimi",
+          "body": "Shasia saldohet, më pas trajtohet kundër korrozionit."
+        },
+        "insulation": {
+          "title": "Izolimi dhe mbylljet",
+          "body": "Panelet sandwich mbyllin shasinë: dysheme, mure, çati."
+        },
+        "systems": {
+          "title": "Instalimet",
+          "body": "Instalimet elektrike dhe hidraulike vendosen para finiturave."
+        },
+        "finishing": {
+          "title": "Finiturat dhe kolaudimi",
+          "body": "Dritare, mobilim dhe një test i plotë funksional."
+        },
+        "loading": {
+          "title": "Ngarkimi",
+          "body": "Mbi kamion, gati për të dalë nga oborri."
+        }
+      },
+      "photoPlaceholder": "Fotografi stabilimenti — për t'u bërë"
+    },
+    "europe": {
+      "title": "Pse në Evropë",
+      "lead": "Një krahasim i ndershëm me alternativën aziatike: distanca, afatet, mbështetja, konformiteti.",
+      "mapNote": "Kohët e kalimit të Adriatikut nga Durrësi — skemë, jo në shkallë.",
+      "ports": {
+        "bari": "Durrës → Bari",
+        "brindisi": "Durrës → Brindisi",
+        "igoumenitsa": "Durrës → Igumenicë",
+        "trieste": "Durrës → Trieste",
+        "fiume": "Durrës → Rijekë"
+      },
+      "timeToConfirm": "koha e kalimit për t'u konfirmuar"
+    },
+    "capacity": {
+      "title": "Kapaciteti",
+      "stats": {
+        "modules": {
+          "label": "module në muaj"
+        },
+        "floorArea": {
+          "label": "m² stabiliment"
+        },
+        "years": {
+          "label": "vite në karpenteri"
+        },
+        "countries": {
+          "label": "shtete të shërbyera"
+        }
+      },
+      "valueToConfirm": "për t'u konfirmuar"
+    },
+    "cta": {
+      "title": "Kërko një ofertë",
+      "body": "Na trego përdorimin, formatin dhe destinacionin. Përgjigjemi me një propozim teknik, jo një telefonatë shitjeje.",
+      "button": "Kërko një ofertë"
+    }
+  },
   "pages": {
-    "home": { "title": "Domeinox" },
-    "products": { "title": "Produktet" },
-    "productsOffices": { "title": "Zyra" },
-    "productsHousing": { "title": "Banesa" },
-    "productsSanitary": { "title": "Njësi sanitare" },
-    "productsSpecial": { "title": "Njësi speciale" },
-    "productsHospitality": { "title": "Mikpritje" },
-    "configurator": { "title": "Konfiguro modulin tënd" },
-    "projects": { "title": "Projektet" },
-    "production": { "title": "Prodhimi" },
-    "certifications": { "title": "Certifikimet dhe cilësia" },
-    "logistics": { "title": "Logjistika dhe afatet" },
-    "company": { "title": "Kompania" },
-    "contact": { "title": "Kontakti" }
+    "home": {
+      "title": "Domeinox"
+    },
+    "products": {
+      "title": "Produktet"
+    },
+    "productsOffices": {
+      "title": "Zyra"
+    },
+    "productsHousing": {
+      "title": "Banesa"
+    },
+    "productsSanitary": {
+      "title": "Njësi sanitare"
+    },
+    "productsSpecial": {
+      "title": "Njësi speciale"
+    },
+    "productsHospitality": {
+      "title": "Mikpritje"
+    },
+    "configurator": {
+      "title": "Konfiguro modulin tënd"
+    },
+    "projects": {
+      "title": "Projektet"
+    },
+    "production": {
+      "title": "Prodhimi"
+    },
+    "certifications": {
+      "title": "Certifikimet dhe cilësia"
+    },
+    "logistics": {
+      "title": "Logjistika dhe afatet"
+    },
+    "company": {
+      "title": "Kompania"
+    },
+    "contact": {
+      "title": "Kontakti"
+    }
   }
 }

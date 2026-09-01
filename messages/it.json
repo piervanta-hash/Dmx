@@ -1,4 +1,8 @@
 {
+  "common": {
+    "area": "Superficie",
+    "leadTime": "Tempo di consegna"
+  },
   "nav": {
     "home": "Home",
     "products": "Prodotti",
@@ -24,20 +28,177 @@
     "label": "Pagina in lavorazione",
     "note": "Il contenuto arriva in una fase successiva — vedi il piano del sito."
   },
+  "home": {
+    "hero": {
+      "model": "A20",
+      "dimensions": "6058 × 2438 mm"
+    },
+    "assembly": {
+      "eyebrow": "Il montaggio",
+      "title": "Domeinox parte dall'acciaio.",
+      "body": "Il telaio è saldato in casa, nel nostro stabilimento. Tutto il resto si assembla sopra. Gli altri assemblano moduli comprati.",
+      "note": "La sequenza 3D scroll-driven arriva in Fase 3. Questo è il segnaposto statico."
+    },
+    "families": {
+      "title": "Cosa produciamo",
+      "lead": "Cinque famiglie, nove modelli base. Ognuno esiste perché risolveva un problema di distribuzione, non perché serviva a riempire un catalogo.",
+      "offices": {
+        "name": "Uffici",
+        "description": "Ufficio open space, due postazioni",
+        "area": "13,8 m² netti",
+        "leadTime": "tempo di consegna da confermare"
+      },
+      "housing": {
+        "name": "Alloggi",
+        "description": "Camera due posti con bagno privato",
+        "area": "9,6 + 4,0 m² netti",
+        "leadTime": "tempo di consegna da confermare"
+      },
+      "sanitary": {
+        "name": "Servizi igienici",
+        "description": "Quattro cabine WC, tre lavabi",
+        "area": "14,8 m² lordi",
+        "leadTime": "tempo di consegna da confermare"
+      },
+      "special": {
+        "name": "Speciali",
+        "description": "Guardiania e punto di controllo",
+        "area": "6,7 m² netti",
+        "leadTime": "tempo di consegna da confermare"
+      },
+      "hospitality": {
+        "name": "Ricettivo",
+        "description": "Camera con bagno privato",
+        "area": "14,5 + 5,1 m² netti",
+        "leadTime": "tempo di consegna da confermare"
+      }
+    },
+    "classes": {
+      "title": "Le due classi",
+      "lead": "La distinzione che la maggior parte dei concorrenti non dichiara, e che determina il costo reale di una fornitura.",
+      "classA": {
+        "label": "Classe A",
+        "width": "2438 mm di larghezza esterna",
+        "transport": "Monoblocco su bilico standard. Nessuna autorizzazione. Impilabile, movimentabile con attrezzatura ISO.",
+        "use": "Cantiere, alloggi, servizi igienici, emergenza, aggregazioni."
+      },
+      "classB": {
+        "label": "Classe B",
+        "width": "3000 mm di larghezza esterna",
+        "transport": "Flat-pack in spedizione, montaggio in sito. In monoblocco richiede trasporto eccezionale.",
+        "use": "Uffici comfort, ricettivo, permanenze lunghe."
+      }
+    },
+    "production": {
+      "title": "Dall'acciaio al modulo",
+      "lead": "La sequenza reale. Fotografie di stabilimento, non render.",
+      "steps": {
+        "cutting": {
+          "title": "Taglio e sagomatura",
+          "body": "I profili in acciaio vengono tagliati e sagomati sui disegni del telaio."
+        },
+        "welding": {
+          "title": "Saldatura e trattamento",
+          "body": "Il telaio viene saldato, poi trattato contro la corrosione."
+        },
+        "insulation": {
+          "title": "Coibentazione e chiusure",
+          "body": "I pannelli sandwich chiudono il telaio: pavimento, pareti, copertura."
+        },
+        "systems": {
+          "title": "Impianti",
+          "body": "Gli impianti elettrico e idraulico entrano prima delle finiture."
+        },
+        "finishing": {
+          "title": "Finiture e collaudo",
+          "body": "Serramenti, arredi, e un collaudo funzionale completo."
+        },
+        "loading": {
+          "title": "Carico",
+          "body": "Sul bilico, pronto per uscire dal piazzale."
+        }
+      },
+      "photoPlaceholder": "Fotografia di stabilimento — da scattare"
+    },
+    "europe": {
+      "title": "Perché in Europa",
+      "lead": "Un confronto onesto con l'alternativa asiatica: distanza, tempi, assistenza, conformità.",
+      "mapNote": "Tempi di traversata dell'Adriatico da Durazzo — schema, non in scala.",
+      "ports": {
+        "bari": "Durazzo → Bari",
+        "brindisi": "Durazzo → Brindisi",
+        "igoumenitsa": "Durazzo → Igoumenitsa",
+        "trieste": "Durazzo → Trieste",
+        "fiume": "Durazzo → Fiume"
+      },
+      "timeToConfirm": "tempo di traversata da confermare"
+    },
+    "capacity": {
+      "title": "Capacità",
+      "stats": {
+        "modules": {
+          "label": "moduli al mese"
+        },
+        "floorArea": {
+          "label": "m² di stabilimento"
+        },
+        "years": {
+          "label": "anni di attività nella carpenteria"
+        },
+        "countries": {
+          "label": "paesi serviti"
+        }
+      },
+      "valueToConfirm": "da confermare"
+    },
+    "cta": {
+      "title": "Richiedi un preventivo",
+      "body": "Dicci l'uso, il formato e la destinazione. Rispondiamo con una proposta tecnica, non una chiamata commerciale.",
+      "button": "Richiedi un preventivo"
+    }
+  },
   "pages": {
-    "home": { "title": "Domeinox" },
-    "products": { "title": "Prodotti" },
-    "productsOffices": { "title": "Uffici" },
-    "productsHousing": { "title": "Alloggi" },
-    "productsSanitary": { "title": "Servizi igienici" },
-    "productsSpecial": { "title": "Speciali" },
-    "productsHospitality": { "title": "Ricettivo" },
-    "configurator": { "title": "Configura il tuo modulo" },
-    "projects": { "title": "Progetti" },
-    "production": { "title": "Produzione" },
-    "certifications": { "title": "Certificazioni e qualità" },
-    "logistics": { "title": "Logistica e tempi" },
-    "company": { "title": "Azienda" },
-    "contact": { "title": "Contatti" }
+    "home": {
+      "title": "Domeinox"
+    },
+    "products": {
+      "title": "Prodotti"
+    },
+    "productsOffices": {
+      "title": "Uffici"
+    },
+    "productsHousing": {
+      "title": "Alloggi"
+    },
+    "productsSanitary": {
+      "title": "Servizi igienici"
+    },
+    "productsSpecial": {
+      "title": "Speciali"
+    },
+    "productsHospitality": {
+      "title": "Ricettivo"
+    },
+    "configurator": {
+      "title": "Configura il tuo modulo"
+    },
+    "projects": {
+      "title": "Progetti"
+    },
+    "production": {
+      "title": "Produzione"
+    },
+    "certifications": {
+      "title": "Certificazioni e qualità"
+    },
+    "logistics": {
+      "title": "Logistica e tempi"
+    },
+    "company": {
+      "title": "Azienda"
+    },
+    "contact": {
+      "title": "Contatti"
+    }
   }
 }

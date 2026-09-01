@@ -1,4 +1,8 @@
 {
+  "common": {
+    "area": "Area",
+    "leadTime": "Lead time"
+  },
   "nav": {
     "home": "Home",
     "products": "Products",
@@ -24,20 +28,177 @@
     "label": "Page in progress",
     "note": "Content lands in a later phase — see the site plan."
   },
+  "home": {
+    "hero": {
+      "model": "A20",
+      "dimensions": "6058 × 2438 mm"
+    },
+    "assembly": {
+      "eyebrow": "The assembly",
+      "title": "Domeinox starts from steel.",
+      "body": "The frame is welded in-house, in our own workshop. Everything else is assembled onto it. Others assemble modules they buy in.",
+      "note": "The scroll-driven 3D sequence lands in Fase 3. This is the static placeholder."
+    },
+    "families": {
+      "title": "What we build",
+      "lead": "Five families, nine base models. Each one exists because a distribution problem needed solving, not because a catalogue needed filling.",
+      "offices": {
+        "name": "Offices",
+        "description": "Open space office, two workstations",
+        "area": "13.8 m² net",
+        "leadTime": "lead time to confirm"
+      },
+      "housing": {
+        "name": "Housing",
+        "description": "Two-bed room with private bathroom",
+        "area": "9.6 + 4.0 m² net",
+        "leadTime": "lead time to confirm"
+      },
+      "sanitary": {
+        "name": "Sanitary units",
+        "description": "Four WC cabins, three washbasins",
+        "area": "14.8 m² gross",
+        "leadTime": "lead time to confirm"
+      },
+      "special": {
+        "name": "Special units",
+        "description": "Guard post and checkpoint",
+        "area": "6.7 m² net",
+        "leadTime": "lead time to confirm"
+      },
+      "hospitality": {
+        "name": "Hospitality",
+        "description": "Room with private bathroom",
+        "area": "14.5 + 5.1 m² net",
+        "leadTime": "lead time to confirm"
+      }
+    },
+    "classes": {
+      "title": "Two classes",
+      "lead": "The distinction most competitors don't state, and the one that sets the real cost of a supply.",
+      "classA": {
+        "label": "Class A",
+        "width": "2438 mm external width",
+        "transport": "Single-piece load on a standard trailer. No special permit. Stackable, handled with ISO equipment.",
+        "use": "Site facilities, housing, sanitary units, emergency response, aggregations."
+      },
+      "classB": {
+        "label": "Class B",
+        "width": "3000 mm external width",
+        "transport": "Flat-pack for transport, assembled on site. A single-piece load needs an oversize permit.",
+        "use": "Comfort offices, hospitality, long-stay use."
+      }
+    },
+    "production": {
+      "title": "From steel to module",
+      "lead": "The real sequence. Photographs of the workshop, not renders.",
+      "steps": {
+        "cutting": {
+          "title": "Cutting and shaping",
+          "body": "Steel profiles cut and shaped to the frame drawings."
+        },
+        "welding": {
+          "title": "Welding and treatment",
+          "body": "The frame is welded, then treated against corrosion."
+        },
+        "insulation": {
+          "title": "Insulation and cladding",
+          "body": "Sandwich panels close the frame: floor, walls, roof."
+        },
+        "systems": {
+          "title": "Systems",
+          "body": "Electrical and plumbing runs go in before the finishes."
+        },
+        "finishing": {
+          "title": "Finishing and testing",
+          "body": "Fixtures, fittings, and a full functional test."
+        },
+        "loading": {
+          "title": "Loading",
+          "body": "Onto the trailer, ready to leave the yard."
+        }
+      },
+      "photoPlaceholder": "Workshop photograph — to be shot"
+    },
+    "europe": {
+      "title": "Why Europe",
+      "lead": "An honest comparison with the Asian alternative: distance, lead time, aftercare, compliance.",
+      "mapNote": "Adriatic crossing times from Durrës — schematic, not to scale.",
+      "ports": {
+        "bari": "Durrës → Bari",
+        "brindisi": "Durrës → Brindisi",
+        "igoumenitsa": "Durrës → Igoumenitsa",
+        "trieste": "Durrës → Trieste",
+        "fiume": "Durrës → Rijeka"
+      },
+      "timeToConfirm": "crossing time to confirm"
+    },
+    "capacity": {
+      "title": "Capacity",
+      "stats": {
+        "modules": {
+          "label": "modules per month"
+        },
+        "floorArea": {
+          "label": "m² of workshop"
+        },
+        "years": {
+          "label": "years in steelwork"
+        },
+        "countries": {
+          "label": "countries served"
+        }
+      },
+      "valueToConfirm": "to confirm"
+    },
+    "cta": {
+      "title": "Request a quote",
+      "body": "Tell us the use, the format, and the destination. We reply with a technical proposal, not a sales call.",
+      "button": "Request a quote"
+    }
+  },
   "pages": {
-    "home": { "title": "Domeinox" },
-    "products": { "title": "Products" },
-    "productsOffices": { "title": "Offices" },
-    "productsHousing": { "title": "Housing" },
-    "productsSanitary": { "title": "Sanitary units" },
-    "productsSpecial": { "title": "Special units" },
-    "productsHospitality": { "title": "Hospitality" },
-    "configurator": { "title": "Configure your module" },
-    "projects": { "title": "Projects" },
-    "production": { "title": "Production" },
-    "certifications": { "title": "Certifications & quality" },
-    "logistics": { "title": "Logistics & lead times" },
-    "company": { "title": "Company" },
-    "contact": { "title": "Contact" }
+    "home": {
+      "title": "Domeinox"
+    },
+    "products": {
+      "title": "Products"
+    },
+    "productsOffices": {
+      "title": "Offices"
+    },
+    "productsHousing": {
+      "title": "Housing"
+    },
+    "productsSanitary": {
+      "title": "Sanitary units"
+    },
+    "productsSpecial": {
+      "title": "Special units"
+    },
+    "productsHospitality": {
+      "title": "Hospitality"
+    },
+    "configurator": {
+      "title": "Configure your module"
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "production": {
+      "title": "Production"
+    },
+    "certifications": {
+      "title": "Certifications & quality"
+    },
+    "logistics": {
+      "title": "Logistics & lead times"
+    },
+    "company": {
+      "title": "Company"
+    },
+    "contact": {
+      "title": "Contact"
+    }
   }
 }
