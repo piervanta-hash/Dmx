@@ -26,6 +26,7 @@ export const RATIOS = {
   fianco: 6058 / 2591,
 } as const;
 
-/** Il greco non è coperto dal subset Archivo disponibile: serve un fallback dedicato
- *  (es. Noto Sans) attivo solo per la build/locale `el`, non un secondo font generale. */
+/** Il greco non è coperto dal subset Archivo disponibile (verificato via Google Fonts:
+ *  nessun glifo greco nel font). Risolto con Noto Sans self-hosted, attivo solo per la
+ *  locale `el` — vedi app/fonts/index.ts e app/globals.css (`html[lang="el"]`). */
 export const GREEK_FALLBACK_NEEDED = true;

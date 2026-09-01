@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { archivo } from "../fonts";
+import { archivo, notoSansGreek } from "../fonts";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
@@ -34,8 +34,11 @@ export default async function LocaleLayout({
   // Rende il locale disponibile ai Server Component discendenti senza doverlo ripassare a mano.
   setRequestLocale(locale);
 
+  // Il font greco si carica solo per la locale `el`, mai per le altre — vedi app/fonts/index.ts.
+  const fontVariables = locale === "el" ? `${archivo.variable} ${notoSansGreek.variable}` : archivo.variable;
+
   return (
-    <html lang={locale} className={`${archivo.variable} antialiased`}>
+    <html lang={locale} className={`${fontVariables} antialiased`}>
       <body className="flex min-h-screen flex-col">
         <NextIntlClientProvider>
           <SmoothScrollProvider />

@@ -51,4 +51,6 @@ export const LOCALE_LABELS: Record<string, string> = {
   en: "EN",
   it: "IT",
   sq: "SQ",
+  de: "DE",
+  el: "EL",
 };

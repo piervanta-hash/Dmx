@@ -67,6 +67,13 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Archivo non copre il greco: sulla sola locale `el` l'intera pagina passa a
+   Noto Sans (self-hosted, sottoinsiemata latin+greco) invece di mescolare due
+   famiglie carattere per carattere — vedi app/fonts/index.ts. */
+html[lang="el"] {
+  --font-sans: var(--font-noto-greek), ui-sans-serif, system-ui, sans-serif;
+}
+
 /* Riepilogo tecnico del configuratore: l'unico contenuto stampabile del sito. */
 @media print {
   body * {

@@ -18,14 +18,14 @@ export function SiteHeader() {
           Domeinox
         </Link>
 
-        <nav aria-label={t("home")} className="hidden items-center gap-8 md:flex">
+        <nav aria-label={t("home")} className="hidden items-center gap-3 xl:flex">
           {NAV_ITEMS.map((item) => {
             const active = pathname === item.href;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`type-body text-sm transition-colors ${
+                className={`type-body whitespace-nowrap text-xs transition-colors ${
                   active ? "text-genziana-scuro" : "text-calce/75 hover:text-calce"
                 }`}
               >
@@ -35,7 +35,7 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden xl:block">
           <LocaleSwitcher tone="onDark" />
         </div>
 
@@ -44,7 +44,7 @@ export function SiteHeader() {
           aria-expanded={open}
           aria-label={open ? "Chiudi il menu" : "Apri il menu"}
           onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 flex-col items-end justify-center gap-1.5 md:hidden"
+          className="flex h-10 w-10 flex-col items-end justify-center gap-1.5 xl:hidden"
         >
           <span className={`h-px w-7 bg-calce transition-transform ${open ? "translate-y-2 rotate-45" : ""}`} />
           <span className={`h-px w-7 bg-calce transition-opacity ${open ? "opacity-0" : ""}`} />
@@ -53,7 +53,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="fixed inset-x-0 top-[72px] bottom-0 z-40 flex flex-col justify-between overflow-y-auto bg-grafite px-8 py-10 md:hidden">
+        <div className="fixed inset-x-0 top-[72px] bottom-0 z-40 flex flex-col justify-between overflow-y-auto bg-grafite px-8 py-10 xl:hidden">
           <nav className="flex flex-col gap-6">
             {NAV_ITEMS.map((item) => {
               const active = pathname === item.href;

@@ -22,7 +22,7 @@ export function LocaleSwitcher({ tone = "onDark" }: LocaleSwitcherProps) {
   const activeClass = tone === "onDark" ? "text-calce" : "text-grafite";
 
   return (
-    <nav aria-label="Lingua" className="flex items-center gap-4">
+    <nav aria-label="Lingua" className="flex items-center gap-3">
       {routing.locales.map((code) => (
         <button
           key={code}

@@ -1,0 +1,467 @@
+{
+  "common": {
+    "area": "Fläche",
+    "leadTime": "Lieferzeit"
+  },
+  "nav": {
+    "home": "Start",
+    "products": "Produkte",
+    "productsOffices": "Büros",
+    "productsHousing": "Wohnmodule",
+    "productsSanitary": "Sanitäreinheiten",
+    "productsSpecial": "Spezialeinheiten",
+    "productsHospitality": "Gästeeinheiten",
+    "configurator": "Modul konfigurieren",
+    "projects": "Projekte",
+    "production": "Produktion",
+    "certifications": "Zertifizierungen & Qualität",
+    "logistics": "Logistik & Lieferzeiten",
+    "company": "Unternehmen",
+    "contact": "Kontakt",
+    "downloads": "Downloads"
+  },
+  "footer": {
+    "manufactured": "Hergestellt in Albanien — Europa",
+    "languageNote": "Einige Sprachen werden vor der muttersprachlichen Prüfung angezeigt.",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "placeholder": {
+    "label": "Seite in Arbeit",
+    "note": "Inhalte folgen in einer späteren Phase — siehe die Seitenstruktur."
+  },
+  "home": {
+    "hero": {
+      "model": "A20",
+      "dimensions": "6058 × 2438 mm"
+    },
+    "assembly": {
+      "heading": "Die Montage: wie ein Domeinox-Modul entsteht",
+      "fallbackAlt": "Explosionszeichnung des Domeinox-Moduls: Rahmen, Boden, Wände, Ausstattung und Dach.",
+      "stages": [
+        "Ausgangspunkt: ebener Untergrund.",
+        "Stahlrahmen S235, verzinkt. Eigenfertigung.",
+        "Zementgebundene Spanplatte und PVC, 180 mm.",
+        "Sandwichpaneel, 60 mm.",
+        "Aluminiumfenster, Tür 900 mm.",
+        "Dach, 100 mm, geneigt für die Entwässerung.",
+        "6058 × 2438 × 2591 mm. Verladebereit."
+      ]
+    },
+    "families": {
+      "title": "Was wir bauen",
+      "lead": "Fünf Familien, neun Grundmodelle. Jedes existiert, weil es ein Logistikproblem löst — nicht, weil ein Katalog gefüllt werden musste.",
+      "offices": {
+        "name": "Büros",
+        "description": "Großraumbüro, zwei Arbeitsplätze",
+        "area": "13,8 m² netto",
+        "leadTime": "Lieferzeit zu bestätigen"
+      },
+      "housing": {
+        "name": "Wohnmodule",
+        "description": "Doppelzimmer mit eigenem Bad",
+        "area": "9,6 + 4,0 m² netto",
+        "leadTime": "Lieferzeit zu bestätigen"
+      },
+      "sanitary": {
+        "name": "Sanitäreinheiten",
+        "description": "Vier WC-Kabinen, drei Waschbecken",
+        "area": "14,8 m² brutto",
+        "leadTime": "Lieferzeit zu bestätigen"
+      },
+      "special": {
+        "name": "Spezialeinheiten",
+        "description": "Pförtnerhaus und Kontrollposten",
+        "area": "6,7 m² netto",
+        "leadTime": "Lieferzeit zu bestätigen"
+      },
+      "hospitality": {
+        "name": "Gästeeinheiten",
+        "description": "Zimmer mit eigenem Bad",
+        "area": "14,5 + 5,1 m² netto",
+        "leadTime": "Lieferzeit zu bestätigen"
+      }
+    },
+    "classes": {
+      "title": "Zwei Klassen",
+      "lead": "Der Unterschied, den die meisten Wettbewerber verschweigen — und der die tatsächlichen Kosten einer Lieferung bestimmt.",
+      "classA": {
+        "label": "Klasse A",
+        "width": "2438 mm Außenbreite",
+        "transport": "Einzelladung auf Standard-Sattelauflieger. Keine Sondergenehmigung. Stapelbar, mit ISO-Geräten zu handhaben.",
+        "use": "Baustelleneinrichtung, Wohnmodule, Sanitäreinheiten, Notfalleinsatz, Modulverbünde."
+      },
+      "classB": {
+        "label": "Klasse B",
+        "width": "3000 mm Außenbreite",
+        "transport": "Flachverpackt für den Transport, Montage vor Ort. Als Einzelladung ist eine Sondergenehmigung nötig.",
+        "use": "Komfortbüros, Gästeeinheiten, Langzeitnutzung."
+      }
+    },
+    "production": {
+      "title": "Vom Stahl zum Modul",
+      "lead": "Die reale Abfolge. Werksfotos, keine Renderings.",
+      "steps": {
+        "cutting": {
+          "title": "Zuschnitt und Formgebung",
+          "body": "Stahlprofile werden nach den Rahmenzeichnungen zugeschnitten und geformt."
+        },
+        "welding": {
+          "title": "Schweißen und Behandlung",
+          "body": "Der Rahmen wird geschweißt und anschließend korrosionsgeschützt."
+        },
+        "insulation": {
+          "title": "Dämmung und Verkleidung",
+          "body": "Sandwichpaneele schließen den Rahmen: Boden, Wände, Dach."
+        },
+        "systems": {
+          "title": "Installationen",
+          "body": "Elektro- und Sanitärleitungen werden vor dem Innenausbau verlegt."
+        },
+        "finishing": {
+          "title": "Ausbau und Prüfung",
+          "body": "Ausstattung, Möblierung und ein vollständiger Funktionstest."
+        },
+        "loading": {
+          "title": "Verladung",
+          "body": "Auf den Sattelauflieger, bereit zur Abfahrt."
+        }
+      },
+      "photoPlaceholder": "Werksfoto — noch aufzunehmen"
+    },
+    "europe": {
+      "title": "Warum Europa",
+      "lead": "Ein ehrlicher Vergleich mit der asiatischen Alternative: Entfernung, Lieferzeit, Service, Konformität.",
+      "mapNote": "Adria-Überfahrtszeiten ab Durrës — schematisch, nicht maßstabsgetreu.",
+      "ports": {
+        "bari": "Durrës → Bari",
+        "brindisi": "Durrës → Brindisi",
+        "igoumenitsa": "Durrës → Igoumenitsa",
+        "trieste": "Durrës → Triest",
+        "fiume": "Durrës → Rijeka"
+      },
+      "timeToConfirm": "Überfahrtszeit zu bestätigen"
+    },
+    "capacity": {
+      "title": "Kapazität",
+      "stats": {
+        "modules": {
+          "label": "Module pro Monat"
+        },
+        "floorArea": {
+          "label": "m² Werksfläche"
+        },
+        "years": {
+          "label": "Jahre im Stahlbau"
+        },
+        "countries": {
+          "label": "belieferte Länder"
+        }
+      },
+      "valueToConfirm": "zu bestätigen"
+    },
+    "cta": {
+      "title": "Angebot anfordern",
+      "body": "Nennen Sie uns Nutzung, Format und Zielort. Wir antworten mit einem technischen Vorschlag, nicht mit einem Verkaufsanruf.",
+      "button": "Angebot anfordern"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Domeinox"
+    },
+    "products": {
+      "title": "Produkte"
+    },
+    "productsOffices": {
+      "title": "Büros"
+    },
+    "productsHousing": {
+      "title": "Wohnmodule"
+    },
+    "productsSanitary": {
+      "title": "Sanitäreinheiten"
+    },
+    "productsSpecial": {
+      "title": "Spezialeinheiten"
+    },
+    "productsHospitality": {
+      "title": "Gästeeinheiten"
+    },
+    "configurator": {
+      "title": "Modul konfigurieren"
+    },
+    "projects": {
+      "title": "Projekte"
+    },
+    "production": {
+      "title": "Produktion"
+    },
+    "certifications": {
+      "title": "Zertifizierungen & Qualität"
+    },
+    "logistics": {
+      "title": "Logistik & Lieferzeiten"
+    },
+    "company": {
+      "title": "Unternehmen"
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "downloads": {
+      "title": "Downloads"
+    }
+  },
+  "products": {
+    "rooms": {
+      "office": "Büro",
+      "serviceRoom": "Nebenraum",
+      "bathroom": "Bad",
+      "bedroom": "Zimmer",
+      "wc": "WC",
+      "lobby": "Vorraum mit Waschbecken",
+      "post": "Posten",
+      "bedroomA": "Zimmer A",
+      "bedroomB": "Zimmer B",
+      "bedroomN1": "Zimmer 1",
+      "bedroomN2": "Zimmer 2",
+      "bedroomN3": "Zimmer 3",
+      "living": "Wohnen und Küche",
+      "bedroomMain": "Hauptschlafzimmer",
+      "bedroomDouble": "Doppelzimmer"
+    },
+    "models": {
+      "A20-U1": {
+        "name": "Großraumbüro",
+        "description": "Großraumbüro, zwei Arbeitsplätze"
+      },
+      "A20-U2": {
+        "name": "Büro mit Sanitäreinheit",
+        "description": "Büro mit eigenem WC, Waschbecken und Dusche"
+      },
+      "A20-L2": {
+        "name": "Doppelzimmer mit Bad",
+        "description": "Doppelzimmer mit eigenem Bad"
+      },
+      "A20-S1": {
+        "name": "Sanitärblock",
+        "description": "Vier WC-Kabinen, drei Waschbecken — Variante mit Dusche verfügbar"
+      },
+      "A10-G": {
+        "name": "Pförtnerhaus und Kontrollposten",
+        "description": "Pförtnerhaus und Kontrollposten, beidseitig verglast"
+      },
+      "A30-L4": {
+        "name": "Vierbettzimmer, gemeinsames Bad",
+        "description": "Vierbettzimmer, gemeinsames Bad, zwei unabhängige Eingänge"
+      },
+      "A40-D": {
+        "name": "Sechsbett-Unterkunft",
+        "description": "Drei unabhängige Doppelzimmer mit gemeinsamem Sanitärblock"
+      },
+      "F29": {
+        "name": "Familienwohneinheit",
+        "description": "Zwei kombinierte A20-Module, Montage vor Ort"
+      },
+      "B21-L": {
+        "name": "Komforteinheit",
+        "description": "Zimmer mit eigenem Bad, flachverpackt, 12 Einheiten pro Sattelauflieger"
+      }
+    },
+    "specs": {
+      "sectionTitle": "Technische Daten",
+      "externalDimensions": "Außenmaße",
+      "netArea": "Nettofläche",
+      "grossArea": "Bruttofläche",
+      "weight": "Leergewicht",
+      "frame": "Rahmen",
+      "frameValue": "Stahl S235JR, verzinkt",
+      "panels": "Paneele",
+      "panelsValue": "Sandwichpaneel 60 / 80 / 100 mm, PUR oder Steinwolle",
+      "uValue": "Wärmedurchgangskoeffizient (U)",
+      "fireRating": "Brandverhalten (EN 13501-1)",
+      "windowsAndDoors": "Fenster und Türen",
+      "windowsAndDoorsValue": "Aluminium",
+      "electrical": "Elektroinstallation",
+      "snowWindLoads": "Schnee- und Windlasten",
+      "stackable": "Stapelbar",
+      "stackableYesA": "Ja — Klasse A",
+      "stackableNoB": "Nein — Klasse B, flachverpackt",
+      "combinable": "Kombinierbar",
+      "unitsMonoblock": "Einheiten pro Sattelauflieger, monoblock",
+      "unitsFlatpack": "Einheiten pro Sattelauflieger, flachverpackt",
+      "leadTime": "Lieferzeit",
+      "downloads": "Downloads",
+      "downloadPdf": "Datenblatt (PDF)",
+      "downloadDwg": "CAD-Zeichnung (DWG)",
+      "downloadIfc": "BIM-Modell (IFC)",
+      "notAvailable": "Noch nicht verfügbar",
+      "toConfirm": "zu bestätigen",
+      "floorPlanTitle": "Grundriss",
+      "combinableYes": "Ja"
+    },
+    "familyLead": {
+      "offices": "Zwei Modelle: Großraumbüro oder mit eigener Sanitäreinheit.",
+      "housing": "Vom Doppelzimmer bis zur Sechsbett-Unterkunft, bis hin zur Familieneinheit aus zwei Modulen.",
+      "sanitary": "Ein Sanitärblock mit vier Kabinen, Variante mit Dusche verfügbar.",
+      "special": "Ein Pförtnerhaus mit Kontrollposten, beidseitig verglast.",
+      "hospitality": "Ein Komfortzimmer mit eigenem Bad, flachverpackt für den Transport."
+    }
+  },
+  "configurator": {
+    "lead": "Sechs Schritte, keine Preise. Danach folgt ein technischer Vorschlag auf Basis Ihrer Angaben.",
+    "stepLabel": "Schritt {current} von {total}",
+    "back": "Zurück",
+    "next": "Weiter",
+    "toSummary": "Prüfen und senden",
+    "steps": {
+      "use": {
+        "label": "Vorgesehene Nutzung",
+        "options": {
+          "offices": "Büros",
+          "housing": "Wohnmodule",
+          "sanitary": "Sanitäreinheiten",
+          "special": "Spezialnutzung",
+          "hospitality": "Gästeeinheiten"
+        }
+      },
+      "format": {
+        "label": "Format"
+      },
+      "insulation": {
+        "label": "Dämmung",
+        "options": {
+          "p60": "Sandwichpaneel 60 mm",
+          "p80": "Sandwichpaneel 80 mm",
+          "p100": "Sandwichpaneel 100 mm"
+        }
+      },
+      "fitout": {
+        "label": "Innenausbau",
+        "options": {
+          "basic": "Basis — Rohbau, ohne Möblierung",
+          "comfort": "Komfort — je nach Modell möbliert"
+        }
+      },
+      "systems": {
+        "label": "Installationen",
+        "options": {
+          "electricalOnly": "Nur Elektro",
+          "electricalPlumbing": "Elektro und Sanitär"
+        }
+      },
+      "quantity": {
+        "label": "Menge",
+        "unit": "Einheiten"
+      }
+    },
+    "summary": {
+      "title": "Technische Zusammenfassung",
+      "print": "Drucken",
+      "noPriceNote": "Hier wird kein Preis angezeigt. Senden Sie diese Zusammenfassung als Anfrage — Sie erhalten einen schriftlichen technischen Vorschlag."
+    }
+  },
+  "quoteRequest": {
+    "title": "Angebot anfordern",
+    "lead": "Sagen Sie uns, was Sie brauchen. Wir antworten mit einem technischen Vorschlag, nicht mit einem Verkaufsanruf.",
+    "fields": {
+      "projectType": {
+        "label": "Projektart",
+        "placeholder": "z. B. Baustellenbüro, Unterkunft für Arbeiter"
+      },
+      "quantity": {
+        "label": "Menge"
+      },
+      "destinationCountry": {
+        "label": "Zielland"
+      },
+      "desiredDeliveryDate": {
+        "label": "Gewünschtes Lieferdatum"
+      },
+      "notes": {
+        "label": "Anmerkungen"
+      },
+      "name": {
+        "label": "Name"
+      },
+      "company": {
+        "label": "Unternehmen"
+      },
+      "email": {
+        "label": "E-Mail"
+      },
+      "phone": {
+        "label": "Telefon"
+      }
+    },
+    "submit": "Anfrage senden",
+    "submitting": "Wird gesendet…",
+    "success": {
+      "title": "Anfrage erhalten",
+      "body": "Wir haben Ihre Anfrage erfasst und melden uns unter der angegebenen E-Mail-Adresse."
+    },
+    "errors": {
+      "required": "Pflichtfeld.",
+      "invalidEmail": "Bitte eine gültige E-Mail-Adresse eingeben.",
+      "generic": "Etwas ist schiefgelaufen. Versuchen Sie es erneut oder schreiben Sie uns direkt.",
+      "rateLimited": "Zu viele Anfragen von dieser Verbindung. Versuchen Sie es in ein paar Minuten erneut."
+    }
+  },
+  "downloads": {
+    "title": "Downloads",
+    "lead": "Datenblätter, Zertifikate, Katalog, CAD- und BIM-Dateien. Noch nichts veröffentlicht.",
+    "categories": {
+      "technicalSheets": "Datenblätter",
+      "certificates": "Zertifikate",
+      "catalog": "Katalog",
+      "cad": "CAD-Dateien (DWG)",
+      "bim": "BIM-Modelle (IFC)"
+    },
+    "notAvailable": "Noch nicht verfügbar",
+    "viewAll": "Zum Downloadbereich"
+  },
+  "projects": {
+    "lead": "Realisierte Projekte, veröffentlicht erst, wenn der Kunde der Nennung zustimmt.",
+    "empty": {
+      "title": "Noch nichts veröffentlicht",
+      "body": "Die ersten Referenzen erscheinen hier, sobald ein Kunde Fotos und Namen zur Veröffentlichung freigibt."
+    }
+  },
+  "production": {
+    "lead": "Alles geschieht im Domeinox-Werk — keine Montage in Fremdvergabe."
+  },
+  "certifications": {
+    "lead": "Normen und Zertifizierungen, gelistet sobald sie zur Veröffentlichung bestätigt sind.",
+    "categories": {
+      "qualityManagement": "Qualitätsmanagement",
+      "welding": "Schweißtechnik",
+      "productCompliance": "Produkt- und Brandschutzkonformität"
+    },
+    "toConfirm": "zu bestätigen"
+  },
+  "logistics": {
+    "lead": "Zwei Transportklassen, reale Überfahrtsrouten ab Durrës. Lieferzeiten werden je Auftrag bestätigt."
+  },
+  "company": {
+    "lead": "Ein Stahlbaubetrieb in Albanien, der in den Markt für Containermodule einsteigt. Domeinox beginnt beim Stahl — Wettbewerber montieren zugekaufte Module.",
+    "marketsTitle": "Belieferte Märkte",
+    "markets": [
+      "Albanien",
+      "Kosovo",
+      "Nordmazedonien",
+      "Montenegro",
+      "Serbien",
+      "Bosnien und Herzegowina",
+      "Griechenland",
+      "Italien",
+      "Adria-EU"
+    ]
+  },
+  "contactInfo": {
+    "title": "Firmensitz",
+    "addressLabel": "Adresse",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "toConfirm": "zu bestätigen"
+  }
+}
