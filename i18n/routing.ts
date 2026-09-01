@@ -71,6 +71,11 @@ export const routing = defineRouting({
       it: '/configura',
       sq: '/konfiguro',
     },
+    '/downloads': {
+      en: '/downloads',
+      it: '/download',
+      sq: '/shkarkimet',
+    },
     '/projects': {
       en: '/projects',
       it: '/progetti',

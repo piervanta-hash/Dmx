@@ -17,7 +17,8 @@
     "certifications": "Certifications & quality",
     "logistics": "Logistics & lead times",
     "company": "Company",
-    "contact": "Contact"
+    "contact": "Contact",
+    "downloads": "Downloads"
   },
   "footer": {
     "manufactured": "Manufactured in Albania — Europe",
@@ -206,6 +207,9 @@
     },
     "contact": {
       "title": "Contact"
+    },
+    "downloads": {
+      "title": "Downloads"
     }
   },
   "products": {
@@ -303,5 +307,117 @@
       "special": "A guardhouse and checkpoint, glazed on two sides.",
       "hospitality": "A comfort room with private bathroom, flat-pack for transport."
     }
+  },
+  "configurator": {
+    "lead": "Six steps, no prices shown. A technical proposal follows, based on what you tell us here.",
+    "stepLabel": "Step {current} of {total}",
+    "back": "Back",
+    "next": "Next",
+    "toSummary": "Review and send",
+    "steps": {
+      "use": {
+        "label": "Intended use",
+        "options": {
+          "offices": "Offices",
+          "housing": "Housing",
+          "sanitary": "Sanitary units",
+          "special": "Special use",
+          "hospitality": "Hospitality"
+        }
+      },
+      "format": {
+        "label": "Format"
+      },
+      "insulation": {
+        "label": "Insulation",
+        "options": {
+          "p60": "60 mm sandwich panel",
+          "p80": "80 mm sandwich panel",
+          "p100": "100 mm sandwich panel"
+        }
+      },
+      "fitout": {
+        "label": "Interior fit-out",
+        "options": {
+          "basic": "Basic — bare shell, no furniture",
+          "comfort": "Comfort — furnished per model"
+        }
+      },
+      "systems": {
+        "label": "Systems",
+        "options": {
+          "electricalOnly": "Electrical only",
+          "electricalPlumbing": "Electrical and plumbing"
+        }
+      },
+      "quantity": {
+        "label": "Quantity",
+        "unit": "units"
+      }
+    },
+    "summary": {
+      "title": "Technical summary",
+      "print": "Print",
+      "noPriceNote": "No price shown here. Send this summary as a request and you'll receive a written technical proposal."
+    }
+  },
+  "quoteRequest": {
+    "title": "Request a quote",
+    "lead": "Tell us what you need. We reply with a technical proposal, not a sales call.",
+    "fields": {
+      "projectType": {
+        "label": "Project type",
+        "placeholder": "e.g. site office, worker housing"
+      },
+      "quantity": {
+        "label": "Quantity"
+      },
+      "destinationCountry": {
+        "label": "Destination country"
+      },
+      "desiredDeliveryDate": {
+        "label": "Desired delivery date"
+      },
+      "notes": {
+        "label": "Notes"
+      },
+      "name": {
+        "label": "Name"
+      },
+      "company": {
+        "label": "Company"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "phone": {
+        "label": "Phone"
+      }
+    },
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "success": {
+      "title": "Request received",
+      "body": "We've logged your request and will get back to you at the email address provided."
+    },
+    "errors": {
+      "required": "This field is required.",
+      "invalidEmail": "Enter a valid email address.",
+      "generic": "Something went wrong. Try again or write to us directly.",
+      "rateLimited": "Too many requests from this connection. Try again in a few minutes."
+    }
+  },
+  "downloads": {
+    "title": "Downloads",
+    "lead": "Technical sheets, certificates, catalogue, CAD and BIM files. Nothing published yet.",
+    "categories": {
+      "technicalSheets": "Technical sheets",
+      "certificates": "Certificates",
+      "catalog": "Catalogue",
+      "cad": "CAD files (DWG)",
+      "bim": "BIM models (IFC)"
+    },
+    "notAvailable": "Not yet available",
+    "viewAll": "View the downloads area"
   }
 }

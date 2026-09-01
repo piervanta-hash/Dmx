@@ -66,3 +66,20 @@ body {
   color: var(--color-grafite);
   font-family: var(--font-sans);
 }
+
+/* Riepilogo tecnico del configuratore: l'unico contenuto stampabile del sito. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #configurator-print-summary,
+  #configurator-print-summary * {
+    visibility: visible;
+  }
+  #configurator-print-summary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

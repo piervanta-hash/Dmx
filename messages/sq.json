@@ -17,7 +17,8 @@
     "certifications": "Certifikimet dhe cilësia",
     "logistics": "Logjistika dhe afatet",
     "company": "Kompania",
-    "contact": "Kontakti"
+    "contact": "Kontakti",
+    "downloads": "Shkarkime"
   },
   "footer": {
     "manufactured": "Prodhuar në Shqipëri — Evropë",
@@ -206,6 +207,9 @@
     },
     "contact": {
       "title": "Kontakti"
+    },
+    "downloads": {
+      "title": "Shkarkime"
     }
   },
   "products": {
@@ -303,5 +307,117 @@
       "special": "Një roje dhe pikë kontrolli, me xhama në dy anë.",
       "hospitality": "Një dhomë komode me banjë private, flat-pack për transportin."
     }
+  },
+  "configurator": {
+    "lead": "Gjashtë hapa, pa çmime të shfaqura. Vjen një propozim teknik, bazuar në atë që na tregon këtu.",
+    "stepLabel": "Hapi {current} nga {total}",
+    "back": "Prapa",
+    "next": "Vazhdo",
+    "toSummary": "Rishiko dhe dërgo",
+    "steps": {
+      "use": {
+        "label": "Përdorimi i parashikuar",
+        "options": {
+          "offices": "Zyra",
+          "housing": "Banesa",
+          "sanitary": "Njësi sanitare",
+          "special": "Përdorim special",
+          "hospitality": "Mikpritje"
+        }
+      },
+      "format": {
+        "label": "Formati"
+      },
+      "insulation": {
+        "label": "Izolimi",
+        "options": {
+          "p60": "Panel sandwich 60 mm",
+          "p80": "Panel sandwich 80 mm",
+          "p100": "Panel sandwich 100 mm"
+        }
+      },
+      "fitout": {
+        "label": "Rifiniturat e brendshme",
+        "options": {
+          "basic": "Bazë — guaskë e zhveshur, pa mobilje",
+          "comfort": "Komod — e mobiluar sipas modelit"
+        }
+      },
+      "systems": {
+        "label": "Instalimet",
+        "options": {
+          "electricalOnly": "Vetëm elektrike",
+          "electricalPlumbing": "Elektrike dhe hidraulike"
+        }
+      },
+      "quantity": {
+        "label": "Sasia",
+        "unit": "njësi"
+      }
+    },
+    "summary": {
+      "title": "Përmbledhje teknike",
+      "print": "Printo",
+      "noPriceNote": "Këtu nuk shfaqet asnjë çmim. Dërgo këtë përmbledhje si kërkesë: do të marrësh një propozim teknik me shkrim."
+    }
+  },
+  "quoteRequest": {
+    "title": "Kërko një ofertë",
+    "lead": "Na trego çfarë të duhet. Përgjigjemi me një propozim teknik, jo një telefonatë shitjeje.",
+    "fields": {
+      "projectType": {
+        "label": "Lloji i projektit",
+        "placeholder": "p.sh. zyrë kantieri, banesa punëtorësh"
+      },
+      "quantity": {
+        "label": "Sasia"
+      },
+      "destinationCountry": {
+        "label": "Shteti i destinacionit"
+      },
+      "desiredDeliveryDate": {
+        "label": "Data e dëshiruar e dorëzimit"
+      },
+      "notes": {
+        "label": "Shënime"
+      },
+      "name": {
+        "label": "Emri"
+      },
+      "company": {
+        "label": "Kompania"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "phone": {
+        "label": "Telefoni"
+      }
+    },
+    "submit": "Dërgo kërkesën",
+    "submitting": "Duke dërguar…",
+    "success": {
+      "title": "Kërkesa u mor",
+      "body": "E regjistruam kërkesën tënde dhe do të përgjigjemi në adresën email të dhënë."
+    },
+    "errors": {
+      "required": "Fusha e detyrueshme.",
+      "invalidEmail": "Vendos një adresë email të vlefshme.",
+      "generic": "Diçka shkoi keq. Provo përsëri ose na shkruaj direkt.",
+      "rateLimited": "Shumë kërkesa nga kjo lidhje. Provo përsëri pas pak minutash."
+    }
+  },
+  "downloads": {
+    "title": "Shkarkime",
+    "lead": "Fletë teknike, certifikata, katalog, skedarë CAD dhe BIM. Ende asgjë e publikuar.",
+    "categories": {
+      "technicalSheets": "Fletë teknike",
+      "certificates": "Certifikata",
+      "catalog": "Katalogu",
+      "cad": "Skedarë CAD (DWG)",
+      "bim": "Modele BIM (IFC)"
+    },
+    "notAvailable": "Ende jo i disponueshëm",
+    "viewAll": "Shko te zona e shkarkimeve"
   }
 }

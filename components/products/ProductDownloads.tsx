@@ -1,8 +1,10 @@
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 /** Area download: i file non esistono ancora — link disattivi con nota esplicita, mai un link morto silenzioso. */
 export function ProductDownloads() {
   const t = useTranslations('products.specs');
+  const td = useTranslations('downloads');
   const items = [t('downloadPdf'), t('downloadDwg'), t('downloadIfc')];
 
   return (
@@ -16,6 +18,9 @@ export function ProductDownloads() {
           </li>
         ))}
       </ul>
+      <Link href="/downloads" className="type-data mt-4 inline-block text-genziana hover:underline">
+        {td('viewAll')}
+      </Link>
     </div>
   );
 }

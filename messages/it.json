@@ -17,7 +17,8 @@
     "certifications": "Certificazioni e qualità",
     "logistics": "Logistica e tempi",
     "company": "Azienda",
-    "contact": "Contatti"
+    "contact": "Contatti",
+    "downloads": "Download"
   },
   "footer": {
     "manufactured": "Fabbricato in Albania — Europa",
@@ -206,6 +207,9 @@
     },
     "contact": {
       "title": "Contatti"
+    },
+    "downloads": {
+      "title": "Download"
     }
   },
   "products": {
@@ -303,5 +307,117 @@
       "special": "Una guardiania e punto di controllo, vetrata su due lati.",
       "hospitality": "Una camera comfort con bagno privato, flat-pack per il trasporto."
     }
+  },
+  "configurator": {
+    "lead": "Sei passaggi, nessun prezzo mostrato. Segue una proposta tecnica, basata su quanto ci indichi qui.",
+    "stepLabel": "Passo {current} di {total}",
+    "back": "Indietro",
+    "next": "Avanti",
+    "toSummary": "Rivedi e invia",
+    "steps": {
+      "use": {
+        "label": "Uso previsto",
+        "options": {
+          "offices": "Uffici",
+          "housing": "Alloggi",
+          "sanitary": "Servizi igienici",
+          "special": "Uso speciale",
+          "hospitality": "Ricettivo"
+        }
+      },
+      "format": {
+        "label": "Formato"
+      },
+      "insulation": {
+        "label": "Coibentazione",
+        "options": {
+          "p60": "Pannello sandwich 60 mm",
+          "p80": "Pannello sandwich 80 mm",
+          "p100": "Pannello sandwich 100 mm"
+        }
+      },
+      "fitout": {
+        "label": "Allestimento interno",
+        "options": {
+          "basic": "Base — guscio spoglio, senza arredi",
+          "comfort": "Comfort — arredato secondo il modello"
+        }
+      },
+      "systems": {
+        "label": "Impianti",
+        "options": {
+          "electricalOnly": "Solo elettrico",
+          "electricalPlumbing": "Elettrico e idraulico"
+        }
+      },
+      "quantity": {
+        "label": "Quantità",
+        "unit": "unità"
+      }
+    },
+    "summary": {
+      "title": "Riepilogo tecnico",
+      "print": "Stampa",
+      "noPriceNote": "Qui non è mostrato alcun prezzo. Invia questo riepilogo come richiesta: riceverai una proposta tecnica scritta."
+    }
+  },
+  "quoteRequest": {
+    "title": "Richiedi un preventivo",
+    "lead": "Dicci cosa ti serve. Rispondiamo con una proposta tecnica, non una telefonata commerciale.",
+    "fields": {
+      "projectType": {
+        "label": "Tipo di progetto",
+        "placeholder": "es. ufficio di cantiere, alloggi operai"
+      },
+      "quantity": {
+        "label": "Quantità"
+      },
+      "destinationCountry": {
+        "label": "Paese di destinazione"
+      },
+      "desiredDeliveryDate": {
+        "label": "Data di consegna desiderata"
+      },
+      "notes": {
+        "label": "Note"
+      },
+      "name": {
+        "label": "Nome"
+      },
+      "company": {
+        "label": "Azienda"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "phone": {
+        "label": "Telefono"
+      }
+    },
+    "submit": "Invia la richiesta",
+    "submitting": "Invio…",
+    "success": {
+      "title": "Richiesta ricevuta",
+      "body": "Abbiamo registrato la tua richiesta e ti risponderemo all'indirizzo email indicato."
+    },
+    "errors": {
+      "required": "Campo obbligatorio.",
+      "invalidEmail": "Inserisci un indirizzo email valido.",
+      "generic": "Qualcosa è andato storto. Riprova o scrivici direttamente.",
+      "rateLimited": "Troppe richieste da questa connessione. Riprova tra qualche minuto."
+    }
+  },
+  "downloads": {
+    "title": "Download",
+    "lead": "Schede tecniche, certificati, catalogo, file CAD e BIM. Non ancora pubblicato nulla.",
+    "categories": {
+      "technicalSheets": "Schede tecniche",
+      "certificates": "Certificati",
+      "catalog": "Catalogo",
+      "cad": "File CAD (DWG)",
+      "bim": "Modelli BIM (IFC)"
+    },
+    "notAvailable": "Non ancora disponibile",
+    "viewAll": "Vai all'area download"
   }
 }

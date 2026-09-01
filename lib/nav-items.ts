@@ -39,6 +39,14 @@ export const PRODUCT_FAMILIES: ProductFamily[] = [
   { href: "/products/hospitality", messageKey: "productsHospitality" },
 ];
 
+export interface FooterExtraLink {
+  href: StaticAppPathname;
+  messageKey: "downloads";
+}
+
+/** Link secondari, fuori dalla navigazione principale del brief — solo in footer. */
+export const FOOTER_EXTRA_LINKS: FooterExtraLink[] = [{ href: "/downloads", messageKey: "downloads" }];
+
 export const LOCALE_LABELS: Record<string, string> = {
   en: "EN",
   it: "IT",

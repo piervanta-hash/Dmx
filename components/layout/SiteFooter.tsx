@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { NAV_ITEMS, PRODUCT_FAMILIES } from "@/lib/nav-items";
+import { FOOTER_EXTRA_LINKS, NAV_ITEMS, PRODUCT_FAMILIES } from "@/lib/nav-items";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 
 export function SiteFooter() {
@@ -26,6 +26,13 @@ export function SiteFooter() {
           </nav>
           <nav aria-label={t("products")} className="flex flex-col gap-3">
             {PRODUCT_FAMILIES.map((item) => (
+              <Link key={item.href} href={item.href} className="type-body text-grafite/75 hover:text-grafite">
+                {t(item.messageKey)}
+              </Link>
+            ))}
+          </nav>
+          <nav aria-label={t("downloads")} className="flex flex-col gap-3">
+            {FOOTER_EXTRA_LINKS.map((item) => (
               <Link key={item.href} href={item.href} className="type-body text-grafite/75 hover:text-grafite">
                 {t(item.messageKey)}
               </Link>
