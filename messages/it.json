@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Prodotti",
+    "productsOffices": "Uffici",
+    "productsHousing": "Alloggi",
+    "productsSanitary": "Servizi igienici",
+    "productsSpecial": "Speciali",
+    "productsHospitality": "Ricettivo",
+    "configurator": "Configura il tuo modulo",
+    "projects": "Progetti",
+    "production": "Produzione",
+    "certifications": "Certificazioni e qualità",
+    "logistics": "Logistica e tempi",
+    "company": "Azienda",
+    "contact": "Contatti"
+  },
+  "footer": {
+    "manufactured": "Fabbricato in Albania — Europa",
+    "languageNote": "Alcune lingue sono mostrate prima della revisione madrelingua.",
+    "rights": "Tutti i diritti riservati."
+  },
+  "placeholder": {
+    "label": "Pagina in lavorazione",
+    "note": "Il contenuto arriva in una fase successiva — vedi il piano del sito."
+  },
+  "pages": {
+    "home": { "title": "Domeinox" },
+    "products": { "title": "Prodotti" },
+    "productsOffices": { "title": "Uffici" },
+    "productsHousing": { "title": "Alloggi" },
+    "productsSanitary": { "title": "Servizi igienici" },
+    "productsSpecial": { "title": "Speciali" },
+    "productsHospitality": { "title": "Ricettivo" },
+    "configurator": { "title": "Configura il tuo modulo" },
+    "projects": { "title": "Progetti" },
+    "production": { "title": "Produzione" },
+    "certifications": { "title": "Certificazioni e qualità" },
+    "logistics": { "title": "Logistica e tempi" },
+    "company": { "title": "Azienda" },
+    "contact": { "title": "Contatti" }
+  }
+}

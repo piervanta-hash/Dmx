@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "productsOffices": "Offices",
+    "productsHousing": "Housing",
+    "productsSanitary": "Sanitary units",
+    "productsSpecial": "Special units",
+    "productsHospitality": "Hospitality",
+    "configurator": "Configure your module",
+    "projects": "Projects",
+    "production": "Production",
+    "certifications": "Certifications & quality",
+    "logistics": "Logistics & lead times",
+    "company": "Company",
+    "contact": "Contact"
+  },
+  "footer": {
+    "manufactured": "Manufactured in Albania — Europe",
+    "languageNote": "Some languages are shown ahead of native review.",
+    "rights": "All rights reserved."
+  },
+  "placeholder": {
+    "label": "Page in progress",
+    "note": "Content lands in a later phase — see the site plan."
+  },
+  "pages": {
+    "home": { "title": "Domeinox" },
+    "products": { "title": "Products" },
+    "productsOffices": { "title": "Offices" },
+    "productsHousing": { "title": "Housing" },
+    "productsSanitary": { "title": "Sanitary units" },
+    "productsSpecial": { "title": "Special units" },
+    "productsHospitality": { "title": "Hospitality" },
+    "configurator": { "title": "Configure your module" },
+    "projects": { "title": "Projects" },
+    "production": { "title": "Production" },
+    "certifications": { "title": "Certifications & quality" },
+    "logistics": { "title": "Logistics & lead times" },
+    "company": { "title": "Company" },
+    "contact": { "title": "Contact" }
+  }
+}

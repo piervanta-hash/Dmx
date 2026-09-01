@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import { PALETTE, RATIOS } from "@/lib/design-tokens";
 
 const SWATCHES: { token: keyof typeof PALETTE; use: string; fg: "grafite" | "calce" }[] = [
@@ -16,7 +17,10 @@ const FORMATI = [
   { sigla: "A40", ingombro: "12192 × 2438", lorda: "29,7 m²", netta: "28,0 m²", altezza: "2591" },
 ];
 
-export default function DesignSystemPage() {
+export default async function DesignSystemPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <main className="flex flex-col">
       {/* Intestazione */}

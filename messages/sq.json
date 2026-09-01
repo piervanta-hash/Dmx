@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Ballina",
+    "products": "Produktet",
+    "productsOffices": "Zyra",
+    "productsHousing": "Banesa",
+    "productsSanitary": "Njësi sanitare",
+    "productsSpecial": "Njësi speciale",
+    "productsHospitality": "Mikpritje",
+    "configurator": "Konfiguro modulin tënd",
+    "projects": "Projektet",
+    "production": "Prodhimi",
+    "certifications": "Certifikimet dhe cilësia",
+    "logistics": "Logjistika dhe afatet",
+    "company": "Kompania",
+    "contact": "Kontakti"
+  },
+  "footer": {
+    "manufactured": "Prodhuar në Shqipëri — Evropë",
+    "languageNote": "Disa gjuhë shfaqen para rishikimit nga një folës amtare.",
+    "rights": "Të gjitha të drejtat e rezervuara."
+  },
+  "placeholder": {
+    "label": "Faqe në përgatitje",
+    "note": "Përmbajtja vjen në një fazë të mëvonshme — shih planin e sajtit."
+  },
+  "pages": {
+    "home": { "title": "Domeinox" },
+    "products": { "title": "Produktet" },
+    "productsOffices": { "title": "Zyra" },
+    "productsHousing": { "title": "Banesa" },
+    "productsSanitary": { "title": "Njësi sanitare" },
+    "productsSpecial": { "title": "Njësi speciale" },
+    "productsHospitality": { "title": "Mikpritje" },
+    "configurator": { "title": "Konfiguro modulin tënd" },
+    "projects": { "title": "Projektet" },
+    "production": { "title": "Prodhimi" },
+    "certifications": { "title": "Certifikimet dhe cilësia" },
+    "logistics": { "title": "Logjistika dhe afatet" },
+    "company": { "title": "Kompania" },
+    "contact": { "title": "Kontakti" }
+  }
+}
