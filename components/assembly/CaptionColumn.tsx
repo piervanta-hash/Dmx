@@ -8,7 +8,7 @@ interface CaptionColumnProps {
 /** Didascalia singola, cambia a ogni stato: solo dissolvenza in opacità, 200ms, niente slide. */
 export function CaptionColumn({ stageIndex, captions }: CaptionColumnProps) {
   return (
-    <div className="relative z-10 flex h-full max-w-sm flex-col justify-center px-6 py-12 md:px-10">
+    <div className="relative z-10 flex h-full w-full max-w-sm flex-col justify-center px-6 py-12 md:px-10">
       {captions.map((caption, i) => (
         <p
           key={caption}

@@ -148,7 +148,11 @@ export interface OpeningPiece extends PieceDef {
 
 const OPENING_BASE_Y = WALL_BASE_Y; // porta a terra
 const WINDOW_SILL_Y = 1200;
-const WALL1_Z = -(halfW - WALL_T / 2);
+// Stessa quota Z di parete-lunga-2, non parete-lunga-1: la camera resta sempre su
+// azimut/elevazione positivi (vedi CAMERA_AZIMUTH_* in assembly-motion.ts), quindi
+// inquadra sempre il lato +Z del modulo. Mettere le aperture sul lato -Z le lasciava
+// permanentemente dietro l'intero volume, invisibili per tutta l'animazione.
+const WALL1_Z = halfW - WALL_T / 2;
 
 export const openingPieces: OpeningPiece[] = [
   {

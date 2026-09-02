@@ -26,7 +26,7 @@ export function PieceMesh({ size, color }: PieceMeshProps) {
 
   return (
     <group>
-      <mesh geometry={geometry} castShadow receiveShadow>
+      <mesh geometry={geometry}>
         <meshStandardMaterial color={color} roughness={0.75} metalness={0.1} />
       </mesh>
       <lineSegments geometry={edges}>

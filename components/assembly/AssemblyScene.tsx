@@ -4,7 +4,6 @@ import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import {
-  PALETTE,
   MODULE,
   SCALE,
   framePieces,
@@ -150,7 +149,7 @@ function WallPieces({ progressRef }: { progressRef: ProgressRef }) {
     <>
       {wallPieces.map((wall, i) => (
         <group key={wall.id} ref={(el) => { groups.current[i] = el; }}>
-          {wall.id === 'parete-lunga-1' ? (
+          {wall.id === 'parete-lunga-2' ? (
             wall1Segments.map((seg) => (
               <group key={seg.id} position={seg.position.map((v) => v * SCALE) as [number, number, number]}>
                 <PieceMesh size={seg.size.map((v) => v * SCALE) as [number, number, number]} color={wall.color} />
@@ -179,11 +178,13 @@ function OpeningPieces({ progressRef }: { progressRef: ProgressRef }) {
       if (!g) return;
       // Restano nascosti finché le pareti non sono su: prima non hanno una sede in cui stare.
       g.visible = p >= WALL_WINDOW[1];
-      g.position.set(
-        piece.position[0] * SCALE,
-        piece.position[1] * SCALE,
-        (piece.position[2] + lerp(piece.travelZ, 0, t)) * SCALE,
-      );
+      // Sede fissa, sempre alla posizione finale (mai in traslazione lungo Z): un serramento
+      // che slitta attraverso il foro della parete finiva a tratti fuori dal volume o dietro
+      // la parete stessa, invisibile da fuori. Una piccola crescita di scala è già leggibile
+      // come "si installa" senza rischiare quel bug geometrico.
+      g.position.set(piece.position[0] * SCALE, piece.position[1] * SCALE, piece.position[2] * SCALE);
+      const scale = Math.max(0.001, lerp(0.6, 1, t));
+      g.scale.setScalar(scale);
     });
   });
 
@@ -223,17 +224,11 @@ export function AssemblyScene({ progressRef }: { progressRef: ProgressRef }) {
   return (
     <>
       <CameraRig progressRef={progressRef} />
-      <ambientLight intensity={0.65} color="#F5F5F2" />
-      <directionalLight
-        position={[6, 8, 4]}
-        intensity={1.1}
-        castShadow
-        shadow-mapSize={[1024, 1024]}
-      />
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.001, 0]} receiveShadow>
-        <planeGeometry args={[40, 40]} />
-        <meshStandardMaterial color={PALETTE.background} roughness={0.95} metalness={0} />
-      </mesh>
+      {/* Nessuna ombra, come nel resto del sito ("nessuna card, nessuna ombra"): niente
+          piano di terra a raccogliere ombre, niente castShadow/receiveShadow — solo lo
+          sfondo zinco della sezione CSS sotto il canvas. */}
+      <ambientLight intensity={0.85} color="#F5F5F2" />
+      <directionalLight position={[6, 8, 4]} intensity={0.9} />
       <FramePieces progressRef={progressRef} />
       <FloorPiece progressRef={progressRef} />
       <WallPieces progressRef={progressRef} />

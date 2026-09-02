@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildAlternates } from "@/lib/seo";
-import { PagePlaceholder } from "@/components/layout/PagePlaceholder";
+import { ProductFamiliesSection } from "@/components/home/ProductFamiliesSection";
+import { CtaSection } from "@/components/home/CtaSection";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -17,5 +18,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <PagePlaceholder pageKey="products" />;
+  const t = await getTranslations({ locale, namespace: "pages.products" });
+
+  return (
+    <>
+      <section className="bg-calce px-8 pt-24 md:px-20 md:pt-32">
+        <h1 className="type-display text-display-1 text-grafite">{t("title")}</h1>
+      </section>
+      <ProductFamiliesSection />
+      <CtaSection />
+    </>
+  );
 }
